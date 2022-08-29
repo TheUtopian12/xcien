@@ -25,7 +25,7 @@ const Servicios = () => {
           negocio o empresa.
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-9 w-full mt-6">
+      <div className="grid grid-cols-3 gap-9 w-full mt-20">
         <div className="flex justify-center ">
           <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white ">
             <div className="pt-5 pl-5">

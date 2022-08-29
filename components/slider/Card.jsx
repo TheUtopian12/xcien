@@ -26,19 +26,19 @@ export default class Card extends Component {
       <div style={Card.CONTAINER_STYLE}>
         
         <ReactCardCarousel>
-        <div className="w-[600px] h-[200px] rounded-3xl">
+        <div className="w-[800px] h-[300px] rounded-3xl">
             {" "}
             <img src="/img/Banners/SitioWeb_PromoAgo_xcien.png" className="rounded-3xl"/>{" "}
           </div>
-          <div className="w-[600px] h-[200px] rounded-3xl " >
+          <div className="w-[800px] h-[300px] rounded-3xl " >
             {" "}
             <img src="/img/Banners/Banner-IPv6-XCIEN.png" className="rounded-3xl"/>{" "}
           </div>
-          <div className="w-[600px] h-[200px] rounded-3xl">
+          <div className="w-[800px] h-[300px] rounded-3xl">
             {" "}
             <img src="/img/Banners/banner-tanarah-xcien.png"  className="rounded-3xl"/>{" "}
           </div>
-          <div className="w-[600px] h-[200px] rounded-3xl">
+          <div className="w-[800px] h-[300px] rounded-3xl">
             {" "}
             <img src="/img/Banners/SDWAN-JUL-XCIEN.png"  className="rounded-3xl"/>{" "}
           </div>
