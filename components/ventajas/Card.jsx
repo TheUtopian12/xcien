@@ -7,7 +7,7 @@ const Card = (props) => {
     <div
       className={`card ${active && "active"}`}
       style={{ backgroundImage: `url(${url})` }}
-      onClick={() => props.onCardClick(id)}
+      onMouseEnter={() => props.onCardClick(id)}
     >
       <h3>{title}</h3>
       <p>{description}</p>

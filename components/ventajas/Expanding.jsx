@@ -15,7 +15,7 @@ const Expanding = (props) => {
   return (
     <section className="cards">
       {data.map((card) => (
-        <Card key={card.id} data={card} onCardClick={onCardClick}/>
+        <Card key={card.id} data={card} onCardClick={onCardClick} />
     ))}
     
     </section>

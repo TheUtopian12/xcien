@@ -72,27 +72,28 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 60vh;
   border-radius: 0rem;
   color: white;
   cursor: pointer;
-  width: 5%;
+  width: 25%;
   margin: 0rem;
   transition: width 0.3s;
 }
 
 .card h3 {
-  font-size: 2.5rem;
-  align-self: flex-start;
+  font-size: 1.1rem;
+  text-align: center;
   padding-top: 3rem;
   left: 2rem;
   bottom: 2rem;
-  opacity: 0;
+  opacity: 100;
   transition: opacity 0.5s;
 }
 
 .card p {
   font-size: 1.5rem;
+  
   align-self: flex-start;
   padding-top: 3rem;
   position: relative;
@@ -109,6 +110,7 @@ html {
 
 .card.active h3 {
   font-size: 2.5rem;
+  font-weight: bold;
   align-self: flex-start;
   padding-top: 3rem;
   position: relative;
