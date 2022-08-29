@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import movil from "./assets/IPhone.png";
 import view from "./assets/view.png";
 import refresh from "./assets/refresh.png";
 import tech from "./assets/technical-support.png";
@@ -20,7 +19,7 @@ const Movil = () => {
     >
       <div className="grid grid-cols-3">
         <div className="flex items-center justify-center pt-10">
-          <Image src={movil} width={400} height={400} />
+          <img src='/img/IPhone.png' width={400} height={400} />
         </div>
         <div className="col-span-2 pt-10">
           <div className="text-center">
