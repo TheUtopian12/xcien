@@ -3,11 +3,9 @@ import React from "react";
 const Ventajas = () => {
   return (
     <div className="grid grid-cols-4 gap-9 gapt w-full  h-screen pt-32 bg-black" style={{
-      backgroundImage: "url('/img/BG.png')",
+      backgroundImage: "url('/img/BG_S04.png')",
 
       backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
     }}>
       <div
         className="h-[680px]"

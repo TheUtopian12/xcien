@@ -11,15 +11,15 @@ import bigdata from "./icons/big-data.png";
 const Servicios = () => {
   return (
     <div className="  w-full h-[1200px] justify-center pt-32 bg-black"  style={{
-      backgroundImage: "url('/img/Back Shape.png')",
+      backgroundImage: "url('/img/BG_03_DOWN.png')",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
     }}>
       <div className="grid grid-cols-1 justify-center text-center">
         {" "}
-        <h1 className="text-5xl">Servicios</h1>
-        <h2 className="text-xl ml-20 mr-20 pt-5">
+        <h1 className="text-5xl font-bold text-[#2adc2f]">Servicios</h1>
+        <h2 className="text-xl ml-20 mr-20 pt-5 text-white">
           La combinación de diferentes tecnologías y nuestra experiencia nos
           permite construir una solución personalizada a las necesidades de tu
           negocio o empresa.
@@ -27,7 +27,7 @@ const Servicios = () => {
       </div>
       <div className="grid grid-cols-3 gap-9 w-full mt-6">
         <div className="flex justify-center ">
-          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl shadow-green-500/20 text-white ">
+          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white ">
             <div className="pt-5 pl-5">
               <Image src={internet} width={50} height={50} />
             </div>
@@ -48,7 +48,7 @@ const Servicios = () => {
           </div>
         </div>
         <div className="flex justify-center ">
-          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl shadow-green-500/20 text-white">
+          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={sdwan} width={50} height={50} />
             </div>
@@ -70,7 +70,7 @@ const Servicios = () => {
           </div>
         </div>
         <div className="flex justify-center ">
-          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl shadow-green-500/20 text-white">
+          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={ip} width={50} height={50} />
             </div>
@@ -91,7 +91,7 @@ const Servicios = () => {
           </div>{" "}
         </div>
         <div className="flex justify-center ">
-          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl shadow-green-500/20 text-white">
+          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={ciber} width={50} height={50} />
             </div>
@@ -112,7 +112,7 @@ const Servicios = () => {
           </div>{" "}
         </div>
         <div className="flex justify-center ">
-          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl shadow-green-500/20 text-white">
+          <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={vpn} width={50} height={50} />
             </div>
@@ -134,7 +134,7 @@ const Servicios = () => {
           </div>{" "}
         </div>
         <div className="flex justify-center ">
-          <div className="border-solid  bg-[#050c13] h-[100%] w-[50%] rounded-2xl shadow-xl shadow-green-500/20 text-white">
+          <div className="border-solid  bg-[#050c13] h-[100%] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={bigdata} width={50} height={50} />
             </div>

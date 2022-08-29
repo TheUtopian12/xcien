@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import contacto from "./Contacto.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
 
-  const [textColor, setTextColor] = useState("#fff");
+  const [textColor, setTextColor] = useState("#26e43d");
 
   const handleNav = () => {
     setNav(!nav);
   };
-
 
   return (
     <div
@@ -22,7 +23,10 @@ const Navbar = () => {
           <h1 className="font-bold text-4xl">XCIEN</h1>
         </Link>
 
-        <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
+        <ul
+          style={{ color: `${textColor}` }}
+          className="hidden sm:flex font-semibold"
+        >
           <li className="p-4">
             <Link href="/#inicio">Inicio</Link>
           </li>
@@ -37,6 +41,11 @@ const Navbar = () => {
           </li>
           <li className="p-4">
             <Link href="/">Contacto</Link>
+          </li>
+          <li className="p-4">
+            <Link href="/">
+              <Image src={contacto} width={150} height={30} />
+            </Link>
           </li>
         </ul>
 

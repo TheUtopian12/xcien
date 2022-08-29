@@ -47,8 +47,8 @@ const Example = () => {
                   <div className="col-end-4 text-white mt-[14rem] sm:ml-[-5rem] sm:w-11/12  w-10/12  bg-black border-solid border-2 border-green-500 ">
                     <h1 className="font-normal sm:text-2xl text-xl text-center sm:text-left">
                       Somos expertos en conectividad e integración de servicios
-                      y proyectos{" "}
-                      <span className="font-bold">de telecomunicaciones</span>{" "}
+                      y proyectos de{" "}
+                      <span className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-green-400  to-cyan-400"> Telecomunicaciones</span>{" "}
                       para diferentes sectores
                     </h1>
                   </div>
