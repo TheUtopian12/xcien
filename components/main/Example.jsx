@@ -41,7 +41,7 @@ const Example = () => {
               ),
             },
             {
-              speed: -5,
+              speed: 5,
               children: (
                 <div className="grid grid-cols-1 lg:grid-cols-3  gap-4 bg-gradient-to-t from-[#000000d7] to-transparent ">
                   <div className="col-end-4 text-white mt-[14rem] sm:ml-[-5rem] sm:w-11/12  w-10/12  ">

@@ -13,14 +13,26 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor("#ffffff");
+        setTextColor("#000000");
+      } else {
+        setColor("transparent");
+        setTextColor("#ffffff");
+      }
+    };
+    window.addEventListener("scroll", changeColor);
+  }, []);
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-700"
+      className="fixed left-0 top-0 w-full z-10 ease-in duration-700 h-[110px]"
     >
-      <div className="max-w[1240px] m-auto flex justify-between items-center p-4 text-white">
+      <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/" style={{ color: `${textColor}` }}>
-          <h1 className="font-bold text-4xl">XCIEN</h1>
+          <img src="/img/logo.png" className="w-[220px] h-[100px]" />
         </Link>
 
         <ul
