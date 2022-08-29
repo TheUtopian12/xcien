@@ -19,7 +19,7 @@ const Movil = () => {
     >
       <div className="grid grid-cols-3">
         <div className="flex items-center justify-center pt-10">
-          <img src='/img/IPhone.png' width={400} height={400} />
+          <img src='/img/telefono.png' width={400} height={400} />
         </div>
         <div className="col-span-2 pt-10">
           <div className="text-center">
