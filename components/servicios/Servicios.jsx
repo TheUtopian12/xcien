@@ -37,7 +37,7 @@ const Servicios = () => {
                 Internet
               </h1>
               <p className="pt-5 pl-5">
-                Soluciones de conectividad confiables y seguras para la base de
+                Soluciones de <span className="font-bold">conectividad confiables y seguras</span>  para la base de
                 la transformación de tu empresa.
               </p>
 
@@ -49,8 +49,8 @@ const Servicios = () => {
         </div>
         <div className="flex justify-center ">
           <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
-            <div className="pt-5 pl-5">
-              <Image src={sdwan} width={50} height={50} />
+            <div className="pt-4 pl-5">
+              <Image src={sdwan} width={60} height={50} />
             </div>
 
             <div>
@@ -59,7 +59,7 @@ const Servicios = () => {
               </h1>
               <p className="pt-5 pl-5">
                 Nuestro servicio administrado hace que todos tus sitios trabajen
-                juntos hacia un objetivo común, ya que centraliza y simplifica
+                juntos hacia un objetivo común, ya que <span className="font-bold">centraliza y simplifica </span> 
                 tu red de manera más inteligente.
               </p>
 
@@ -80,8 +80,8 @@ const Servicios = () => {
                 Telefonía IP
               </h1>
               <p className="pt-5 pl-5">
-                Conecte a empleados y clientes con nuestros servicios de voz y
-                colaboración desde la oficina, de forma remota o móvil.
+                Conecte a empleados y clientes con nuestros <span className="font-bold">servicios de voz y
+                colaboración</span>  desde la oficina, de forma remota o móvil.
               </p>
 
               <button href="" className="pt-5 pl-5">
@@ -101,7 +101,7 @@ const Servicios = () => {
                 CIBERSEGURIDAD
               </h1>
               <p className="pt-5 pl-5">
-                Seguridad administrada 100% en la nube. La instalación y la
+               <span className="font-bold">Seguridad administrada</span>  100% en la nube. La instalación y la
                 administración remota es más simple.
               </p>
 
@@ -122,8 +122,8 @@ const Servicios = () => {
                 VPN
               </h1>
               <p className="pt-5 pl-5">
-                Permite a los usuarios autorizados acceder de forma segura a la
-                información y los recursos de la red de tu empresa desde
+                Permite a los usuarios autorizados <span className="font-bold">acceder de forma segura a la
+                información</span>  y los recursos de la red de tu empresa desde
                 ubicaciones remotas.
               </p>
 
@@ -144,8 +144,8 @@ const Servicios = () => {
                 Data Center
               </h1>
               <p className="pt-5 pl-5">
-                Renta un espacio en uno de nuestros racks y almacena de forma
-                segura tu información.
+                Renta un espacio en uno de nuestros racks y <span className="font-bold">almacena de forma
+                segura tu información.</span> 
               </p>
 
               <button href="" className="pt-5 pl-5">

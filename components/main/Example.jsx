@@ -25,7 +25,7 @@ const Example = () => {
             },
 
             {
-              speed: -32,
+              speed: -40,
               children: (
                 <div className="absolute inset-0 flex items-center justify-center ">
                   <Image src={bg2}></Image>

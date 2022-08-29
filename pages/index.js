@@ -11,7 +11,6 @@ import Ventajas from "../components/ventajas/Ventajas";
 export default function Home() {
   return (
     <>
-      <Welcome />
 
       <Example />
       <Banners />

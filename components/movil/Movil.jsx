@@ -29,8 +29,8 @@ const Movil = () => {
           </div>
           <div className=" flex justify-between m-12 text-center text-white font-semibold">
             <div>
-              <Image src={view} width={100} height={90} />
-              <p>Visualiza tus servicios activos y su rendimiento</p>
+              <Image src={view} width={100} height={80} />
+              <p className="pt-2">Visualiza tus servicios activos y su rendimiento</p>
             </div>
 
             <div>

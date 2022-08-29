@@ -28,7 +28,7 @@ const images = [
     url: "/img/Back04.png",
     title: "SLA / Nivel de Servicio",
     description:
-      "Todos nuestros procesos y tecnología están diseñados para ofrecerte los más altos niveles de servicio y brindarte una disponibilidad de hasta 99.95% anual en tu servicio de internet",
+      "Todos nuestros procesos y tecnología están diseñados para ofrecerte los más altos niveles de servicio y brindarte una disponibilidad de hasta 99.95% anual en tu servicio de internet.",
   active: false},
 ];
 const Ventajas = () => {

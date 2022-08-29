@@ -16,13 +16,13 @@ const Nosotros = () => {
         <div className="items-center pt-[20%] ">
           <h1 className="text-5xl font-bold text-[#2adc2f]">Nosotros</h1>
           <p className="pt-5 ">
-            Nuestra experiencia en telecomunicaciones y tecnología, desde hace
+            Nuestra experiencia en <span className="font-bold">telecomunicaciones y tecnología</span> , desde hace
             23 años, nos ha posicionado como el primer proveedor inalámbrico
             para diferentes sectores.{" "}
           </p>
           <p className="pt-5">
-            En este tiempo nos ha permitido crecer y contar con infraestructura
-            propia en 10 estados de México, ubicados en las 3 principales
+            En este tiempo nos ha permitido crecer y contar <span className="font-bold">con infraestructura
+            propia </span>en 10 estados de México, ubicados en las 3 principales
             regiones económicas del país y con presencia de servicios
             especializados a nivel nacional.{" "}
           </p>
@@ -35,7 +35,8 @@ const Nosotros = () => {
             Si buscas una solución de calidad e innovadora, XCIEN es tu opción
             más inteligente. 
                 <br />
-                ¡Estamos listos para asesorarte!
+                <br />
+                <span className="font-bold">¡Estamos listos para asesorarte!</span>  
           </p>
         </div>
       </div>
