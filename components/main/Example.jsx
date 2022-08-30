@@ -43,7 +43,7 @@ const Example = () => {
               {
                 speed: 5,
                 children: (
-                  <div className="grid grid-cols-1 lg:grid-cols-3  gap-4 bg-gradient-to-t from-[#000000d7] to-transparent translate-y-28">
+                  <div className="grid grid-cols-1 lg:grid-cols-3  gap-4 bg-gradient-to-t from-[#000000d7] to-transparent translate-y-32">
                     <div className="col-end-4 text-white mt-[14rem] sm:ml-[-5rem] sm:w-11/12  w-10/12  ">
                       <h1 className="font-normal sm:text-2xl text-xl text-center sm:text-left">
                         Somos expertos en conectividad e integración de

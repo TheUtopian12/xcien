@@ -26,7 +26,7 @@ const Servicios = () => {
         </h2>
       </div>
       <div className="grid grid-cols-3 gap-9 w-full mt-20">
-        <div className="flex justify-center ">
+        <div className="flex justify-center translate-x-48">
           <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white ">
             <div className="pt-5 pl-5">
               <Image src={internet} width={50} height={50} />
@@ -69,7 +69,7 @@ const Servicios = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center ">
+        <div className="flex justify-center -translate-x-48">
           <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={ip} width={50} height={50} />
@@ -90,7 +90,7 @@ const Servicios = () => {
             </div>
           </div>{" "}
         </div>
-        <div className="flex justify-center ">
+        <div className="flex justify-center translate-x-48">
           <div className="border-solid  bg-[#050c13] h-[350px] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={ciber} width={50} height={50} />
@@ -133,7 +133,7 @@ const Servicios = () => {
             </div>
           </div>{" "}
         </div>
-        <div className="flex justify-center ">
+        <div className="flex justify-center -translate-x-48">
           <div className="border-solid  bg-[#050c13] h-[100%] w-[50%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={bigdata} width={50} height={50} />
