@@ -10,9 +10,10 @@ import {
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 800,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
+  
 };
 const Opiniones = () => {
   return (

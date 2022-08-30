@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 const Hero = () => {
   return (
     <div
-      className="grid grid-cols-3 content-end h-screen w-screen "
+      className="grid content-end h-screen w-screen"
       style={{
         background:
           "linear-gradient(135deg, #006003 0%, #000000 34%, #000000 71%, #006003 100%);",
@@ -13,7 +13,7 @@ const Hero = () => {
         className="absolute top-0 w-full h-full bg-center bg-cover"
         style={{
           backgroundImage: "url('/img/Wave BG.png')",
-          opacity: "50%",
+          
         }}
       ></div>
 

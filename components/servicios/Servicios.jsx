@@ -8,6 +8,8 @@ import ciber from "./icons/padlock.png";
 import vpn from "./icons/VPN.png";
 import bigdata from "./icons/big-data.png";
 
+
+//Borroso fondo
 const Servicios = () => {
   return (
     <div className="  w-full h-[1200px] justify-center pt-32 bg-black"  style={{
