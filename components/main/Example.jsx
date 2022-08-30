@@ -24,7 +24,7 @@ const Example = () => {
                 speed: -40,
                 children: (
                   <div
-                    className="absolute inset-0 flex items-center justify-center w-[800px] h-[500px] translate-y-[850px] -translate-x-24 
+                    className="absolute inset-0 flex items-center justify-center w-[800px] h-[500px] translate-y-[810px] -translate-x-24 
                     sm:w-[1000px] 
                     md:w-[1200px]
                     md:translate-y-[750px]
@@ -121,7 +121,7 @@ const Example = () => {
                       </button>
                     </div>
 
-                    <div className="mt-[150px] md:mt-[280px] 2xl:-translate-y-[130px] 2xl:w-[1200px] 2xl:-translate-x-[770px] ">
+                    <div className="mt-[110px] md:mt-[280px] 2xl:-translate-y-[130px] 2xl:w-[1200px] 2xl:-translate-x-[770px] ">
                       <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-green-400 text-center ">
                         Somos el operador inalámbrico empresarial más grande de
                         México
