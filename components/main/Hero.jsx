@@ -27,12 +27,14 @@ const Hero = () => {
       >
         <div className="grid grid-cols-1 lg:grid-cols-3  gap-4 bg-gradient-to-t from-black to-transparent ">
           <div className="col-end-4 text-white mt-[14rem] sm:ml-[-5rem] sm:w-11/12  w-10/12  bg-black border-solid border-2 border-green-500 ">
-            <h1 className="font-normal sm:text-2xl text-xl text-center sm:text-left">
-              Somos expertos en conectividad e integración de servicios y
-              proyectos <span className="font-bold">de telecomunicaciones</span>{" "}
-              para diferentes sectores
-            </h1>
+          <div className="rounded-xl w-52 h-64 mx-auto  mt-10 bg-gradient-to-r p-[6px] from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]">
+   <div className="flex flex-col justify-between h-full bg-white text-white rounded-lg p-4">
+
+     </div>
+</div>
           </div>
+
+          
 
           <div className="col-end-4 text-white mt-[2rem] lg:ml-[-5rem] w-10/12 bg-black border-solid border-2 border-green-500 ">
             <h1 className="font-normal sm:text-2xl sm:text-left text-xl text-center">
