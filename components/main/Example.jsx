@@ -76,7 +76,7 @@ const Example = () => {
               {
                 speed: 5,
                 children: (
-                  <div className="flex flex-col mt-[150px] ml-6 mr-6 
+                  <div className="flex flex-col mt-[150px] ml-3 mr-3 
                    md:ml-9 md:mr-9
                    lg:ml-10 lg:mr-10
                    2xl:translate-x-[1080px]
