@@ -20,7 +20,9 @@ export default function Home() {
       <Movil />*/}
       <Welcome />
       <Example />
-      <Banners /><Servicios />
+      <Banners />
+      <Servicios />
+      <Ventajas />
     </>
   );
 }
