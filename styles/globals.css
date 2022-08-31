@@ -176,9 +176,9 @@ html {
 
 .cardV p {
   font-size: .5rem;
-  align-self: flex-start;
+ text-align: left;
   padding-top: 3rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
   margin-right: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -209,12 +209,11 @@ html {
 .cardV.active p {
   font-size: .5rem;
   text-align: left;
-  
   position: relative;
- left: 0;
- top: 10;
+  left: 1;
+  top: 10;
   bottom: 4rem;
   opacity: 100;
   transition: opacity 1.5s;
-  
+
 }
