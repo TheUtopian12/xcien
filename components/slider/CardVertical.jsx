@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactCardCarousel from "react-card-carousel";
 
-export default class Card extends Component {
+export default class CardVertical extends Component {
   static get CONTAINER_STYLE() {
     return {
       position: "relative",
@@ -21,30 +21,30 @@ export default class Card extends Component {
 
   render() {
     return (
-      <div style={Card.CONTAINER_STYLE} >
-        <ReactCardCarousel ref={ Carousel => this.Carousel = Carousel }  >
-          <div className="2xl:w-[1000px] 2xl:h-[300px] rounded-lg ">
+      <div style={CardVertical.CONTAINER_STYLE} >
+        <ReactCardCarousel ref={ Carousel => this.Carousel = Carousel } alignment="vertical" >
+          <div className="w-[300px] 2xl:h-[400px] rounded-lg ">
             {" "}
             <img
               src="/img/Banners/SitioWeb_PromoAgo_xcien.png"
               className="rounded-lg sm:rounded-3xl"
             />{" "}
           </div>
-          <div className="2xl:w-[1000px] 2xl:h-[300px]  rounded-lg ">
+          <div className="w-[300px]  2xl:h-[400px]  rounded-lg ">
             {" "}
             <img
               src="/img/Banners/Banner-IPv6-XCIEN.png"
               className="rounded-lg sm:rounded-3xl"
             />{" "}
           </div>
-          <div className="2xl:w-[1000px] 2xl:h-[300px]  rounded-lg">
+          <div className="w-[300px]  2xl:h-[400px]  rounded-lg">
             {" "}
             <img
               src="/img/Banners/banner-tanarah-xcien.png"
               className="rounded-lg sm:rounded-3xl"
             />{" "}
           </div>
-          <div className="2xl:w-[1000px] 2xl:h-[300px]  rounded-lg">
+          <div className="w-[300px]  2xl:h-[400px]  rounded-lg">
             {" "}
             <img
               src="/img/Banners/SDWAN-JUL-XCIEN.png"

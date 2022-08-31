@@ -5,6 +5,7 @@ import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import Image from "next/image";
 import Card from "./Card";
 import ReactCardCarousel from "react-card-carousel";
+import CardVertical from "./CardVertical";
 
 function Banners() {
   const NextArrow = ({ onClick }) => {
@@ -49,7 +50,13 @@ function Banners() {
           backgroundPosition: "center",
         }}
       >
-        <Card />
+        <div className="hidden sm:flex">
+          <Card />
+        </div>
+
+        <div className="flex sm:hidden">
+          <CardVertical />
+        </div>
       </div>
     </div>
   );
