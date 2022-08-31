@@ -48,7 +48,7 @@ const Ventajas = () => {
       <div className="hidden sm:flex">
         <Expanding data={images} />
       </div>
-      <div className="sm:hidden flex justify-center ">
+      <div className="sm:hidden flex justify-center pb-10">
         <ExpandingVertical data={images} />
       </div>
     </div>
