@@ -163,7 +163,7 @@ html {
 }
 
 .cardV h3 {
-  font-size: 1rem;
+  font-size: 20px;
   text-align: center;
   padding-top: 1rem;
   left: 2rem;
@@ -173,27 +173,23 @@ html {
 }
 
 .cardV p {
-  font-size: .5rem;
- text-align: left;
-  padding-top: 3rem;
-  margin-left: 0rem;
-  margin-right: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  font-size: 1rem;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
   position: relative;
-  left: 2rem;
-  bottom: 2rem;
   opacity: 0;
   transition: opacity .5s;
 }
 
 .cardV.active {
-  height: 150px;
+  height: 300px;
 
 }
 
 .cardV.active h3 {
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   padding-top: 3rem;
@@ -205,12 +201,7 @@ html {
 }
 
 .cardV.active p {
-  font-size: .5rem;
-  text-align: left;
-  position: relative;
-  left: 1;
-  top: 10;
-  bottom: 4rem;
+  font-size: 1rem;
   opacity: 100;
   transition: opacity 1.5s;
 

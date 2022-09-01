@@ -22,7 +22,9 @@ const Servicios = () => {
     >
       <div className="grid grid-cols-1 justify-center text-center">
         {" "}
-        <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f]">Servicios</h1>
+        <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f]">
+          Servicios
+        </h1>
         <h2 className="sm:text-xl text-lg sm:ml-20 sm:mr-20 ml-5 mr-5 pt-5 text-white">
           La combinación de diferentes tecnologías y nuestra experiencia nos
           permite construir una solución personalizada a las necesidades de tu
@@ -37,10 +39,10 @@ const Servicios = () => {
             </div>
 
             <div>
-              <h1 className="pt-5 pl-5 text-white font-semibold text-2xl uppercase ">
+              <h1 className="pt-5 pl-5 text-white font-semibold sm:text-2xl text-xl uppercase ">
                 Internet
               </h1>
-              <p className="pt-5 pl-5">
+              <p className="pt-5 pl-5 text-md">
                 Soluciones de{" "}
                 <span className="font-bold">
                   conectividad confiables y seguras
@@ -48,7 +50,7 @@ const Servicios = () => {
                 para la base de la transformación de tu empresa.
               </p>
 
-              <button href="" className="pt-5 pl-5">
+              <button href="" className="pt-5 pl-5 text-md">
                 Ver más <Image src={arrow} width={12} height={10} />{" "}
               </button>
             </div>
@@ -61,7 +63,7 @@ const Servicios = () => {
             </div>
 
             <div>
-              <h1 className="pt-5 pl-5 text-white font-semibold text-2xl">
+              <h1 className="pt-5 pl-5 text-white font-semibold sm:text-2xl text-xl">
                 SDWAN
               </h1>
               <p className="pt-5 pl-5">
@@ -84,7 +86,7 @@ const Servicios = () => {
             </div>
 
             <div>
-              <h1 className="pt-5 pl-5 text-white font-semibold text-2xl uppercase ">
+              <h1 className="pt-5 pl-5 text-white font-semibold sm:text-2xl text-xl uppercase ">
                 Telefonía IP
               </h1>
               <p className="pt-5 pl-5">
@@ -108,7 +110,7 @@ const Servicios = () => {
             </div>
 
             <div>
-              <h1 className="pt-5 pl-5 text-white font-semibold text-2xl">
+              <h1 className="pt-5 pl-5 text-white font-semibold sm:text-2xl text-xl">
                 CIBERSEGURIDAD
               </h1>
               <p className="pt-5 pl-5">
@@ -130,7 +132,7 @@ const Servicios = () => {
             </div>
 
             <div>
-              <h1 className="pt-5 pl-5 text-white font-semibold text-2xl">
+              <h1 className="pt-5 pl-5 text-white font-semibold sm:text-2xl text-xl">
                 VPN
               </h1>
               <p className="pt-5 pl-5">
@@ -149,16 +151,16 @@ const Servicios = () => {
           </div>{" "}
         </div>
         <div className="flex justify-center sm:-translate-x-48">
-          <div className="border-solid  bg-[#050c13] h-[100%] sm:w-[50%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
+          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[50%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={bigdata} width={50} height={50} />
             </div>
 
             <div>
-              <h1 className="pt-5 pl-5 text-white font-semibold text-2xl uppercase ">
+              <h1 className="pt-5 pl-5 text-white font-semibold sm:text-2xl text-xl uppercase ">
                 Data Center
               </h1>
-              <p className="pt-5 pl-5">
+              <p className="pt-5 pl-5 text-base">
                 Renta un espacio en uno de nuestros racks y{" "}
                 <span className="font-bold">
                   almacena de forma segura tu información.
