@@ -70,7 +70,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex text-white smjustify-end justify-center sm:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0">
+        <div className="flex text-white sm:justify-end justify-center sm:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0">
           <div className="flex items-center gap-2"><Image src={Facebook} width={20} height={20}/>xcien</div>
           <div className="flex items-center gap-2"><Image src={Instagram} width={20} height={20}/>@xcien</div>
           <div className="flex items-center gap-2"><Image src={Linkedin} width={20} height={20}/>xcien</div>
