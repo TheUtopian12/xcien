@@ -6,12 +6,10 @@ import Footer from "../components/ui/Footer";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-
-    
       <ParallaxProvider>
         <Component {...pageProps} />
       </ParallaxProvider>
-      
+      <Footer></Footer>
     </>
   );
 }

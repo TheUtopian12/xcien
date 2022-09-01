@@ -9,7 +9,7 @@ import AppStore from "./assets/AppStore.png";
 const Movil = () => {
   return (
     <div
-      className="w-full sm:h-[600px] pt-28 bg-black"
+      className="w-full sm:h-[600px] pt-28 bg-black pb-10"
       style={{
         backgroundImage: "url('/img/Back Shape.png')",
         backgroundSize: "cover",
