@@ -15,7 +15,7 @@ export default function Home() {
       <div className="h-[20px] bg-gradient-to-t from-[#012701] to-black"></div>
       
       
-     <Movil />
+     
       
       */}
       <Welcome />
@@ -23,7 +23,7 @@ export default function Home() {
       <Banners />
       <Servicios />
       <Ventajas /> <Nosotros />
-      <Opiniones />
+      <Opiniones /><Movil />
     </>
   );
 }
