@@ -14,15 +14,16 @@ export default function Home() {
       {/*  
       <div className="h-[20px] bg-gradient-to-t from-[#012701] to-black"></div>
       
-      <Ventajas />
-      <Nosotros />
-      <Opiniones />
-      <Movil />*/}
+      
+     <Movil />
+      
+      */}
       <Welcome />
       <Example />
       <Banners />
       <Servicios />
-      <Ventajas />
+      <Ventajas /> <Nosotros />
+      <Opiniones />
     </>
   );
 }
