@@ -64,7 +64,7 @@ export default class Card extends Component {
         </ReactCardCarousel>
         <button onClick={() => this.Carousel.next()} className="text-white">
           <img
-            src="/img/Arrow.PNG"
+            src="/img/ArrowR.PNG"
             alt=""
             className="2xl:-translate-x-[120px] lg:-translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:-translate-x-[50px]
             sm:-translate-y-[90px] sm:-translate-x-[30px] 
