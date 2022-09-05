@@ -6,6 +6,7 @@ import Footer from "../components/ui/Footer";
 function MyApp({ Component, pageProps }) {
   return (
     <>
+    <Navbar/>
       <ParallaxProvider>
         <Component {...pageProps} />
       </ParallaxProvider>

@@ -6,8 +6,9 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
-
   const [textColor, setTextColor] = useState("#26e43d");
+  const [url, setUrl] = useState("/img/logo.png");
+  const [ancho, setAncho] = useState(220);
 
   const handleNav = () => {
     setNav(!nav);
@@ -18,9 +19,13 @@ const Navbar = () => {
       if (window.scrollY >= 90) {
         setColor("#3ba137");
         setTextColor("#ffff");
+        setUrl("/img/xcien-logo-White.png");
+        setAncho(120);
       } else {
         setColor("transparent");
         setTextColor("#26e43d");
+        setUrl("/img/logo.png");
+        setAncho(220);
       }
     };
     window.addEventListener("scroll", changeColor);
@@ -32,7 +37,7 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/" style={{ color: `${textColor}` }}>
-          <img src="/img/logo.png" className="w-[220px] h-[100px]" />
+          <img src={url} style={{ width: ancho }} />
         </Link>
 
         <ul
