@@ -21,60 +21,65 @@ export default class CardVertical extends Component {
 
   render() {
     return (
-      <div style={CardVertical.CONTAINER_STYLE}>
-        <button onClick={() => this.Carousel.next()} className="text-white">
-          <img
-            src="/img/Arrow.png"
-            alt=""
-            className="
-            -translate-y-[220px] translate-x-[170px]
-            -rotate-90"
-          />
-        </button>
-        <ReactCardCarousel
-          ref={(Carousel) => (this.Carousel = Carousel)}
-          alignment="vertical"
-        >
-          <div className="w-[300px] 2xl:h-[400px] rounded-lg ">
-            {" "}
+      <div className="grid">
+        {" "}
+        <div className="flex pl-[45%]">
+          {" "}
+          <button onClick={() => this.Carousel.next()} className="text-white">
             <img
-              src="/img/Banners/SitioWeb_PromoAgo_xcien.png"
-              className="rounded-lg sm:rounded-3xl"
-            />{" "}
-          </div>
-          <div className="w-[300px]  2xl:h-[400px]  rounded-lg ">
-            {" "}
+              src="/img/Arrow.png"
+              alt=""
+              className="
+      -rotate-90"
+            />
+          </button>
+        </div>
+        <div style={CardVertical.CONTAINER_STYLE}>
+          <ReactCardCarousel
+            ref={(Carousel) => (this.Carousel = Carousel)}
+            alignment="vertical"
+          >
+            <div className="w-[300px] 2xl:h-[400px] rounded-lg ">
+              {" "}
+              <img
+                src="/img/Banners/SitioWeb_PromoAgo_xcien.png"
+                className="rounded-lg sm:rounded-3xl"
+              />{" "}
+            </div>
+            <div className="w-[300px]  2xl:h-[400px]  rounded-lg ">
+              {" "}
+              <img
+                src="/img/Banners/Banner-IPv6-XCIEN.png"
+                className="rounded-lg sm:rounded-3xl"
+              />{" "}
+            </div>
+            <div className="w-[300px]  2xl:h-[400px]  rounded-lg">
+              {" "}
+              <img
+                src="/img/Banners/banner-tanarah-xcien.png"
+                className="rounded-lg sm:rounded-3xl"
+              />{" "}
+            </div>
+            <div className="w-[300px]  2xl:h-[400px]  rounded-lg">
+              {" "}
+              <img
+                src="/img/Banners/SDWAN-JUL-XCIEN.png"
+                className="rounded-lg sm:rounded-3xl"
+              />{" "}
+            </div>
+          </ReactCardCarousel>
+        </div>
+        <div className="flex pl-[45%]">
+          {" "}
+          <button onClick={() => this.Carousel.next()} className="text-white">
             <img
-              src="/img/Banners/Banner-IPv6-XCIEN.png"
-              className="rounded-lg sm:rounded-3xl"
-            />{" "}
-          </div>
-          <div className="w-[300px]  2xl:h-[400px]  rounded-lg">
-            {" "}
-            <img
-              src="/img/Banners/banner-tanarah-xcien.png"
-              className="rounded-lg sm:rounded-3xl"
-            />{" "}
-          </div>
-          <div className="w-[300px]  2xl:h-[400px]  rounded-lg">
-            {" "}
-            <img
-              src="/img/Banners/SDWAN-JUL-XCIEN.png"
-              className="rounded-lg sm:rounded-3xl"
-            />{" "}
-          </div>
-        </ReactCardCarousel>
-        <button onClick={() => this.Carousel.next()} className="text-white">
-          <img
-            src="/img/Arrow.PNG"
-            alt=""
-            
-            className="
-          
-            translate-y-[40px] -translate-x-[183px]
+              src="/img/Arrow.png"
+              alt=""
+              className="
             rotate-90"
-          />
-        </button>
+            />
+          </button>
+        </div>
       </div>
     );
   }

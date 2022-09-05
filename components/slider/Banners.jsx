@@ -54,8 +54,10 @@ function Banners() {
           <Card />
         </div>
 
-        <div className="flex sm:hidden">
+        <div className="grid sm:hidden  ">
+         
           <CardVertical />
+         
         </div>
       </div>
     </div>
