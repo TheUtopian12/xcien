@@ -21,8 +21,18 @@ export default class Card extends Component {
 
   render() {
     return (
-      <div style={Card.CONTAINER_STYLE} >
-        <ReactCardCarousel ref={ Carousel => this.Carousel = Carousel }  >
+      <div style={Card.CONTAINER_STYLE}>
+        {" "}
+        <button onClick={() => this.Carousel.next()} className="text-white">
+          <img
+            src="/img/Arrow.png"
+            alt=""
+            className="2xl:translate-x-[120px] lg:translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:translate-x-[50px] 
+            sm:-translate-y-[90px] sm:translate-x-[30px]
+            rotate-180"
+          />
+        </button>
+        <ReactCardCarousel ref={(Carousel) => (this.Carousel = Carousel)}>
           <div className="2xl:w-[1000px] 2xl:h-[300px] rounded-lg ">
             {" "}
             <img
@@ -52,7 +62,15 @@ export default class Card extends Component {
             />{" "}
           </div>
         </ReactCardCarousel>
-        <button onClick={()=>this.Carousel.next()} className='text-white'>Next</button>
+        <button onClick={() => this.Carousel.next()} className="text-white">
+          <img
+            src="/img/Arrow.PNG"
+            alt=""
+            className="2xl:-translate-x-[120px] lg:-translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:-translate-x-[50px]
+            sm:-translate-y-[90px] sm:-translate-x-[30px]
+            "
+          />
+        </button>
       </div>
     );
   }

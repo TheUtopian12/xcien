@@ -121,7 +121,7 @@ const Example = () => {
                       </button>
                     </div>
 
-                    <div className="mt-[110px] md:mt-[100px]   xl:translate-y-[90px] 2xl:-translate-y-[130px] 2xl:w-[1200px] 2xl:-translate-x-[770px] ">
+                    <div className="mt-[110px] md:mt-[100px] lg:mt-[250px]  xl:translate-y-[90px] 2xl:-translate-y-[130px] 2xl:w-[1200px] 2xl:-translate-x-[770px] ">
                       <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-green-400 text-center ">
                         Somos el operador inalámbrico empresarial más grande de
                         México

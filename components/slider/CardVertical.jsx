@@ -21,8 +21,20 @@ export default class CardVertical extends Component {
 
   render() {
     return (
-      <div style={CardVertical.CONTAINER_STYLE} >
-        <ReactCardCarousel ref={ Carousel => this.Carousel = Carousel } alignment="vertical" >
+      <div style={CardVertical.CONTAINER_STYLE}>
+        <button onClick={() => this.Carousel.next()} className="text-white">
+          <img
+            src="/img/Arrow.png"
+            alt=""
+            className="
+            -translate-y-[220px] translate-x-[170px]
+            -rotate-90"
+          />
+        </button>
+        <ReactCardCarousel
+          ref={(Carousel) => (this.Carousel = Carousel)}
+          alignment="vertical"
+        >
           <div className="w-[300px] 2xl:h-[400px] rounded-lg ">
             {" "}
             <img
@@ -52,7 +64,17 @@ export default class CardVertical extends Component {
             />{" "}
           </div>
         </ReactCardCarousel>
-        <button onClick={()=>this.Carousel.next()} className='text-white'>Next</button>
+        <button onClick={() => this.Carousel.next()} className="text-white">
+          <img
+            src="/img/Arrow.PNG"
+            alt=""
+            
+            className="
+          
+            translate-y-[40px] -translate-x-[183px]
+            rotate-90"
+          />
+        </button>
       </div>
     );
   }
