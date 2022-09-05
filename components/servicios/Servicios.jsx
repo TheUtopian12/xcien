@@ -12,9 +12,9 @@ import bigdata from "./icons/big-data.png";
 const Servicios = () => {
   return (
     <div
-      className="  w-full sm:h-[1200px] justify-center pt-32 bg-black"
+      className="  w-full  justify-center pt-32 bg-black md:h-[1200px]"
       style={{
-        backgroundImage: "url('/img/BG_03_DOWN.png')",
+        backgroundImage: "url('/img/backs/BG_03.png')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -31,9 +31,9 @@ const Servicios = () => {
           negocio o empresa.
         </h2>
       </div>
-      <div className="grid sm:grid-cols-3 grid-cols-1 gap-9 w-full mt-20">
-        <div className="flex justify-center sm:translate-x-48">
-          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[50%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white ">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-9 w-full mt-20 md:mb-10 xl:pl-10 xl:pr-10 ">
+        <div className="flex justify-center 2xl:translate-x-48">
+          <div className="border-solid  bg-[#050c13] h-[350px]  sm:w-[90%] md:w-[98%] 2xl:w-[60%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white ">
             <div className="pt-5 pl-5">
               <Image src={internet} width={50} height={50} />
             </div>
@@ -57,7 +57,7 @@ const Servicios = () => {
           </div>
         </div>
         <div className="flex justify-center ">
-          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[50%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
+          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[90%] md:w-[98%]  2xl:w-[60%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-4 pl-5">
               <Image src={sdwan} width={60} height={50} />
             </div>
@@ -79,8 +79,8 @@ const Servicios = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center sm:-translate-x-48">
-          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[50%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
+        <div className="flex justify-center 2xl:-translate-x-48">
+          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[90%] md:w-[98%] 2xl:w-[60%]  w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={ip} width={50} height={50} />
             </div>
@@ -103,8 +103,8 @@ const Servicios = () => {
             </div>
           </div>{" "}
         </div>
-        <div className="flex justify-center sm:translate-x-48">
-          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[50%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
+        <div className="flex justify-center 2xl:translate-x-48">
+          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[90%] md:w-[98%] 2xl:w-[60%]  w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={ciber} width={50} height={50} />
             </div>
@@ -126,7 +126,7 @@ const Servicios = () => {
           </div>{" "}
         </div>
         <div className="flex justify-center ">
-          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[50%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
+          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[90%] md:w-[98%] 2xl:w-[60%]  w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={vpn} width={50} height={50} />
             </div>
@@ -150,8 +150,8 @@ const Servicios = () => {
             </div>
           </div>{" "}
         </div>
-        <div className="flex justify-center sm:-translate-x-48">
-          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[50%] w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
+        <div className="flex justify-center 2xl:-translate-x-48">
+          <div className="border-solid  bg-[#050c13] h-[350px] sm:w-[90%] md:w-[98%] 2xl:w-[60%]  w-[80%] rounded-2xl shadow-xl hover:shadow-green-500/20 text-white">
             <div className="pt-5 pl-5">
               <Image src={bigdata} width={50} height={50} />
             </div>

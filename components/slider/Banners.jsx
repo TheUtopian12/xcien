@@ -43,7 +43,7 @@ function Banners() {
       <div
         className="h-[650px] w-full pt-40"
         style={{
-          backgroundImage: "url('/img/BG_S02.png')",
+          backgroundImage: "url('/img/backs/BG_S02.png')",
           opacity: "90%",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",

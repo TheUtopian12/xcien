@@ -2,12 +2,12 @@ import React from "react";
 
 const Nosotros = () => {
   return (
-    <div className=" w-full grid sm:grid-cols-2 bg-black gap-5">
+    <div className=" w-full grid lg:grid-cols-2 bg-black gap-5">
       <div
-        className="sm:h-[700px] h-[800px] items-center text-white sm:pl-10"
+        className="md:h-[700px] h-[800px] items-center text-white sm:pl-10"
         style={{
-          backgroundImage: "url('/img/Back-Text.png')",
-          borderRadius: 25,
+          backgroundImage: "url('/')",
+          borderRadius: 0,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -44,7 +44,7 @@ const Nosotros = () => {
       </div>
 
       <div
-        className="h-[220px] sm:h-[700px] items-center text-white "
+        className="h-[220px] sm:h-[700px] md:h-[400px] lg:h-[800px] items-center text-white "
         style={{
           backgroundImage: "url('/img/Back-Nosotros.png')",
 

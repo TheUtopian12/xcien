@@ -9,17 +9,17 @@ import AppStore from "./assets/AppStore.png";
 const Movil = () => {
   return (
     <div
-      className="w-full sm:h-[600px] pt-28 bg-black pb-10"
+      className="w-full pt-28 bg-black pb-10"
       style={{
-        backgroundImage: "url('/img/Back Shape.png')",
+        backgroundImage: "url('/img/backs/BG_03.png')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
+        backgroundPosition: "",
       }}
     >
       <div className="grid sm:grid-cols-3 ">
         <div className="flex items-center justify-center pt-10">
-          <div className="w-[200px] sm:w-[400px]">
+          <div className="w-[200px] sm:w-[400px] ">
             <img src="/img/telefono.png" width={400} height={400} />
           </div>
         </div>
@@ -29,12 +29,12 @@ const Movil = () => {
               Descarga nuestra app Mi xcien
             </h1>
           </div>
-          <div className="sm:flex sm:justify-between m-12 sm:text-center text-white font-semibold grid grid-cols-1 text-center">
+          <div className="xl:flex sm:justify-between m-12 md:text-center text-white font-semibold grid grid-cols-1 lg:grid-cols-2 text-center">
             <div>
               <div className="w-[60px] mb-2 mt-5 ml-[40%]">
                 <Image src={view} width={100} height={80} />
               </div>
-              <p className="pt-2">
+              <p className="pt-2 md:text-xs lg:text-base">
                 Visualiza tus servicios activos y su rendimiento
               </p>
             </div>
@@ -44,20 +44,20 @@ const Movil = () => {
               <div className="w-[60px] mb-2 mt-5 ml-[40%]">
                 <Image src={tech} width={100} height={90} />
               </div>
-              <p>Reporte y seguimiento con Soporte técnico</p>
+              <p className="md:text-xs lg:text-base">Reporte y seguimiento con Soporte técnico</p>
             </div>
             <div>
               <div className="w-[60px] mb-2 mt-5 ml-[40%]">
                 {" "}
                 <Image src={refresh} width={100} height={90} />
               </div>
-              <p>Solicita una actualización de tu servicio</p>
+              <p className="md:text-xs lg:text-base">Solicita una actualización de tu servicio</p>
             </div>
             <div>
               <div className="w-[60px] mb-2 mt-5 ml-[40%]">
                 <Image src={invoice} width={100} height={90} />
               </div>
-              <p>Descarga tus facturas</p>
+              <p className="md:text-xs lg:text-base">Descarga tus facturas</p>
             </div>
           </div>
 

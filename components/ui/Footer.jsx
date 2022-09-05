@@ -10,22 +10,25 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="p-4 bg-gray-800  shadow md:px-6 md:py-8 dark:bg-gray-900 sm:h-[400px] h-[90%] "
+        className="p-4 bg-gradient-to-b from-[#011600] to-[#166435]  shadow md:px-6 md:py-8  xl:h-[400px] h-[90%] "
+        
+        
         style={{
-          backgroundImage: "url('/img/BG_08.png')",
+          backgroundImage: "url('/img/backs/BG_08.png')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-
           backgroundPosition: "center",
         }}
       >
-        <div className="grid sm:grid-cols-5 ">
+        <div />
+
+        <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5">
           <div className="sm:col-span-2 w-[200px] flex ">
             {" "}
             <Image src={logoB} className="mr-3 h-8" alt="XCIEN Logo" />
           </div>
 
-          <div className="text-white w-[250px] sm:translate-x-[300px] text-sm">
+          <div className="text-white w-[250px] 2xl:translate-x-[300px] text-sm ">
             <p>Av. Eugenio Garza Sada 3820, Roma, 64780 Monterrey, N.L.</p>
             <br />
             <p>
@@ -36,7 +39,7 @@ const Footer = () => {
               Sábados de 9:00 a 13:00 hrs.
             </p>
           </div>
-          <div className="text-white w-[250px] sm:translate-x-[200px] text-sm">
+          <div className="text-white w-[250px] 2xl:translate-x-[200px] text-sm">
             <p className="font-semibold">Contrataciones</p>
             <p>¡Llámanos sin costo! 800 288 0092</p> <br />
             <p>
@@ -47,7 +50,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="text-white w-[250px] sm:translate-x-[100px] text-sm">
+          <div className="text-white w-[250px] 2xl:translate-x-[100px] text-sm">
             <p className="pb-3 font-semibold">¿Ya eres cliente?</p>
 
             <p>
@@ -66,7 +69,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex text-white sm:justify-end justify-center sm:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0">
+        <div className="flex text-white xl:justify-end justify-center 2xl:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0">
           <div className="flex items-center gap-2">
             <Image src={Facebook} width={20} height={20} />
             xcien

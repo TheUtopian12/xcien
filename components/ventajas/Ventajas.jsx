@@ -40,15 +40,15 @@ const Ventajas = () => {
     <div
       className="flex items-center justify-center gap-9 gapt w-full  h-full sm:h-screen pt-32 bg-black"
       style={{
-        backgroundImage: "url('/img/BG_S04.png')",
+        backgroundImage: "url('/img/backs/BG_S04.png')",
 
         backgroundSize: "cover",
       }}
     >
-      <div className="hidden sm:flex">
+      <div className="hidden lg:flex ">
         <Expanding data={images} />
       </div>
-      <div className="sm:hidden flex justify-center pb-10">
+      <div className="lg:hidden flex justify-center pb-10">
         <ExpandingVertical data={images} />
       </div>
     </div>
