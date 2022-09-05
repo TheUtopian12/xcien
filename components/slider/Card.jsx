@@ -22,18 +22,18 @@ export default class Card extends Component {
   render() {
     return (
       <div style={Card.CONTAINER_STYLE}>
-       <div>
-        <button onClick={() => this.Carousel.next()} className="text-white">
-          <img
-            src="/img/Arrow.png"
-            alt=""
-            className="2xl:translate-x-[120px] lg:translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:translate-x-[50px] 
+        <div>
+          <button onClick={() => this.Carousel.next()} className="text-white">
+            <img
+              src="/img/Arrow.png"
+              alt=""
+              className="2xl:translate-x-[120px] lg:translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:translate-x-[50px] 
             sm:-translate-y-[90px] sm:translate-x-[30px]
             rotate-180"
-          />
-        </button>
-       </div>
-        
+            />
+          </button>
+        </div>
+
         <ReactCardCarousel ref={(Carousel) => (this.Carousel = Carousel)}>
           <div className="2xl:w-[1000px] 2xl:h-[300px] rounded-lg ">
             {" "}
@@ -64,16 +64,17 @@ export default class Card extends Component {
             />{" "}
           </div>
         </ReactCardCarousel>
-        <div><button onClick={() => this.Carousel.next()} className="text-white">
-          <img
-            src="/img/ArrowR.PNG"
-            alt=""
-            className="2xl:-translate-x-[120px] lg:-translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:-translate-x-[50px]
+        <div>
+          <button onClick={() => this.Carousel.next()} className="text-white">
+            <img
+              src="/img/ArrowR.PNG"
+              alt=""
+              className="2xl:-translate-x-[20px] lg:-translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:-translate-x-[50px]
             sm:-translate-y-[90px] sm:-translate-x-[30px] 
             "
-          />
-        </button></div>
-        
+            />
+          </button>
+        </div>
       </div>
     );
   }
