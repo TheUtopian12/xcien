@@ -22,7 +22,7 @@ export default class Card extends Component {
   render() {
     return (
       <div style={Card.CONTAINER_STYLE}>
-        {" "}
+       <div>
         <button onClick={() => this.Carousel.next()} className="text-white">
           <img
             src="/img/Arrow.png"
@@ -32,6 +32,8 @@ export default class Card extends Component {
             rotate-180"
           />
         </button>
+       </div>
+        
         <ReactCardCarousel ref={(Carousel) => (this.Carousel = Carousel)}>
           <div className="2xl:w-[1000px] 2xl:h-[300px] rounded-lg ">
             {" "}
@@ -62,7 +64,7 @@ export default class Card extends Component {
             />{" "}
           </div>
         </ReactCardCarousel>
-        <button onClick={() => this.Carousel.next()} className="text-white">
+        <div><button onClick={() => this.Carousel.next()} className="text-white">
           <img
             src="/img/ArrowR.PNG"
             alt=""
@@ -70,7 +72,8 @@ export default class Card extends Component {
             sm:-translate-y-[90px] sm:-translate-x-[30px] 
             "
           />
-        </button>
+        </button></div>
+        
       </div>
     );
   }
