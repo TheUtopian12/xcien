@@ -21,9 +21,17 @@ export default class Card extends Component {
 
   render() {
     return (
-      <div style={Card.CONTAINER_STYLE}>
+      <div style={Card.CONTAINER_STYLE} className="flex">
         <div>
-        
+          <button onClick={() => this.Carousel.prev()} className="text-white">
+            <img
+              src="/img/ArrowR.PNG"
+              alt=""
+              className="2xl:translate-x-[120px] lg:-translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:-translate-x-[50px]
+            sm:-translate-y-[90px] sm:-translate-x-[30px] rotate-180
+            "
+            />
+          </button>
         </div>
 
         <ReactCardCarousel ref={(Carousel) => (this.Carousel = Carousel)}>

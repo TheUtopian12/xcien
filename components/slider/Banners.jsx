@@ -1,10 +1,7 @@
 import { useState } from "react";
-import Slider from "react-slick";
-
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
-import Image from "next/image";
+
 import Card from "./Card";
-import ReactCardCarousel from "react-card-carousel";
 import CardVertical from "./CardVertical";
 
 function Banners() {
@@ -39,25 +36,30 @@ function Banners() {
   };
 
   return (
-    <div className="bg-gradient-to-t from-black to-black">
-      <div
-        className="h-[650px] w-full pt-40"
+    <div className="bg-gradient-to-t from-black to-black ">
+      <video
+        src="/video/BG02.mp4"
+        type="video/mp4"
+        autoPlay
+        loop
+        muted
         style={{
-          backgroundImage: "url('/img/backs/BG_S02.png')",
-          opacity: "90%",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
+          objectFit: "cover",
+          widows: "100%",
+          height: "100%",
+          zIndex: "-1",
         }}
+      />
+      <div className="h-[0px] w-full pt-40 -translate-y-[350px] sm:-translate-y-[800px] "
+     
+      
       >
         <div className="hidden sm:flex">
           <Card />
         </div>
 
         <div className="grid sm:hidden  ">
-         
           <CardVertical />
-         
         </div>
       </div>
     </div>

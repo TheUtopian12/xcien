@@ -44,7 +44,7 @@ const Nosotros = () => {
       </div>
 
       <div
-        className="h-[220px] sm:h-[700px] md:h-[400px] lg:h-[800px] items-center text-white "
+        className="h-[220px] sm:h-[700px] md:h-[400px] lg:h-[600px] items-center text-white "
         style={{
           backgroundImage: "url('/img/Back-Nosotros.png')",
 

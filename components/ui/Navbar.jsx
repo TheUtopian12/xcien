@@ -6,7 +6,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
-  const [textColor, setTextColor] = useState("#26e43d");
+  const [textColor, setTextColor] = useState("#ffff");
   const [url, setUrl] = useState("/img/logo.png");
   const [ancho, setAncho] = useState(220);
 
@@ -23,9 +23,9 @@ const Navbar = () => {
         setAncho(120);
       } else {
         setColor("transparent");
-        setTextColor("#26e43d");
-        setUrl("/img/logo.png");
-        setAncho(220);
+        setTextColor("#ffff");
+        setUrl("/img/xcien-logo-White.png");
+        setAncho(120);
       }
     };
     window.addEventListener("scroll", changeColor);
@@ -35,20 +35,20 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-10 ease-in duration-700 h-[110px]"
     >
-      <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+      <div className="max-w-screen m-auto flex justify-between items-center p-4 text-white pl-16 pr-16">
         <Link href="/" style={{ color: `${textColor}` }}>
           <img src={url} style={{ width: ancho }} />
         </Link>
 
         <ul
           style={{ color: `${textColor}` }}
-          className="hidden sm:flex font-semibold"
+          className="hidden sm:flex font-semibold pl-[10%] "
         >
           <li className="p-4">
             <Link href="/#inicio">Inicio</Link>
           </li>
           <li className="p-4">
-            <Link href="/">Servicios</Link>
+            <Link href="/#servicios">Servicios</Link>
           </li>
           <li className="p-4">
             <Link href="/">Nosotros</Link>
@@ -59,13 +59,17 @@ const Navbar = () => {
           <li className="p-4">
             <Link href="/">Contacto</Link>
           </li>
-          <li className="p-4">
-            <Link href="/">
-              <Image src={contacto} width={150} height={30} />
-            </Link>
-          </li>
         </ul>
-
+        <ul className="p-4 hidden sm:flex">
+          <Link href="/">
+            <Image
+              src={contacto}
+              width={200}
+              height={42}
+              className="grayscale"
+            />
+          </Link>
+        </ul>
         {/*mobile*/}
 
         <div className="block sm:hidden z-10" onClick={handleNav}>
@@ -83,7 +87,7 @@ const Navbar = () => {
               <Link href="/">Inicio</Link>
             </li>
             <li className="p-4 text-4xl hover:text-green-500">
-              <Link href="/">Servicios</Link>
+              <Link href="/#servicios">Servicios</Link>
             </li>
             <li className="p-4 text-4xl hover:text-green-500">
               <Link href="/">Nosotros</Link>
