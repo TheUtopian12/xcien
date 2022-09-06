@@ -16,13 +16,7 @@ const Example = () => {
               {
                 speed: -45,
                 children: (
-                  <video
-                    src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662498932/VideosXcien/BG01_wmjpyi.mp4"
-                    className="absolute inset-0 flex bg-cover bgImage h-[100%]"
-                    autoPlay
-                    loop
-                    muted
-                  />
+                  <div className="absolute inset-0 flex  bg-cover bgImage h-[80%]" />
                 ),
               },
 
@@ -72,36 +66,30 @@ const Example = () => {
                       className="lg:w-[150px]
                                 lg:h-[710px]"
                     />
-                    <div
-                      className="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-black/80 z-[2] lg:w-[1370px] 
+                    <div className="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-black/80 z-[2] lg:w-[1370px] 
                       2xl:w-[1900px]
                       
-                      "
-                    />
+                      " />
                   </div>
                 ),
               },
               {
                 speed: 5,
                 children: (
-                  <div
-                    className="flex flex-col mt-[150px] ml-3 mr-3 
+                  <div className="flex flex-col mt-[150px] ml-3 mr-3 
                    md:ml-9 md:mr-9
                    lg:ml-10 lg:mr-10
                    2xl:translate-x-[1080px]
                    2xl:translate-y-[210px]
                    2xl:w-[520px]
-                   "
-                  >
+                   ">
                     <div>
-                      <p
-                        className="text-white text-center text-xl 
+                      <p className="text-white text-center text-xl 
                       md:text-2xl
                       lg:text-3xl
                       2xl:text-left
                       2xl:text-2xl
-                      "
-                      >
+                      ">
                         Somos expertos en conectividad e integración de
                         servicios y proyectos de <br />
                         <span className="font-extrabold text-transparent text-2xl sm:text-3xl bg-clip-text bg-gradient-to-r from-green-400  to-cyan-400 uppercase">
