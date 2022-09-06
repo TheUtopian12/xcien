@@ -17,7 +17,7 @@ const Example = () => {
                 speed: -45,
                 children: (
                   <video
-                    src="/video/BG01.mp4"
+                    src="/video/BG03.mp4"
                     type="video/mp4"
                     autoPlay
                     
