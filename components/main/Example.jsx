@@ -17,7 +17,7 @@ const Example = () => {
                 speed: -45,
                 children: (
                   <video
-        src="/video/BG01.mp4"
+        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662498932/VideosXcien/BG01_wmjpyi.mp4"
         type="video/mp4"
         autoPlay
         loop
