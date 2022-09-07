@@ -139,7 +139,7 @@ const Servicios = () => {
       </div>
       <div
         id="servicios"
-        className="w-full  justify-center pt-32 sm:bg-transparent  md:h-[12px] md:-translate-y-[1200px] hidden sm:grid"
+        className="w-full  justify-center pt-32 sm:bg-transparent  md:h-[12px] md:-translate-y-[950px] hidden sm:grid"
         
       >
         <div className="grid grid-cols-1 justify-center text-center">
