@@ -8,13 +8,13 @@ import Instagram from "./instagram.png";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <>
+    <section>
      <video
       src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505910/VideosXcien/BG08_ykemkz.mp4"
       autoPlay
       loop
       muted
-      className="bg-cover w-full  hidden sm:grid translate-y-[60px]"
+      className="bg-cover w-full  hidden sm:grid md:translate-y-[100px]"
     />
       <footer
         className="p-4   shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[250px]"
@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </>
+    </section>
   );
 };
 

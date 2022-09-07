@@ -44,10 +44,10 @@ const Ventajas = () => {
         autoPlay
         loop
         muted
-        className="bg-cover w-full h-screen hidden sm:grid "
+        className="bg-cover w-full h-screen hidden sm:grid sm:translate-y-[160px]"
       />
       <div
-        className="flex items-center justify-center gap-9 gapt w-full  h-full sm:h-[10px] pt-32 sm:-translate-y-[650px]"
+        className="flex items-center justify-center gap-9 gapt w-full  h-full sm:h-[10px] pt-32 sm:-translate-y-[350px]"
        
       >
         <div className="hidden lg:flex ">

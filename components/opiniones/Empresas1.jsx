@@ -6,7 +6,7 @@ export default class MultipleItems extends Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 5,
+      slidesToShow: 1,
       slidesToScroll: 1
     };
     return (
