@@ -9,21 +9,23 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
+     <video
+      src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505910/VideosXcien/BG08_ykemkz.mp4"
+      autoPlay
+      loop
+      muted
+      className="bg-cover w-full  hidden sm:grid translate-y-[60px]"
+    />
       <footer
-        className="p-4 bg-gradient-to-b from-[#011600] to-[#166435]  shadow md:px-6 md:py-8  xl:h-[400px] h-[90%] "
+        className="p-4   shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[250px]"
         
         
-        style={{
-          backgroundImage: "url('/img/backs/BG_08.png')",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
+      
       >
         <div />
 
         <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5">
-          <div className="sm:col-span-2 w-[200px] flex ">
+          <div className="sm:col-span-2 w-[400px] flex ">
             {" "}
             <Image src={logoB} className="mr-3 h-8" alt="XCIEN Logo" />
           </div>

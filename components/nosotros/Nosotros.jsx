@@ -2,18 +2,18 @@ import React from "react";
 
 const Nosotros = () => {
   return (
-    <div className=" w-full grid lg:grid-cols-2 bg-black gap-5">
+    <div className=" w-full grid lg:grid-cols-2 bg-black gap-0">
       <div
         className="md:h-[700px] h-[800px] items-center text-white sm:pl-10"
-        style={{
-          backgroundImage: "url('/')",
-          borderRadius: 0,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="items-center pt-[10%] sm:pt-[20%] text-justify ml-10 mr-10 ">
+       
+      > <video
+      src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505951/VideosXcien/BG05_lxo9ah.mp4"
+      autoPlay
+      loop
+      muted
+      className="bg-cover w-full h-full hidden sm:grid "
+    />
+        <div className="items-center pt-[10%] sm:pt-[20%] text-justify ml-10 mr-10 sm:-translate-y-[800px]">
           <h1 className="text-5xl font-bold text-[#2adc2f]">Nosotros</h1>
           <p className="pt-5 ">
             Nuestra experiencia en{" "}

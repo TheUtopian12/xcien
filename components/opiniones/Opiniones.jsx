@@ -35,15 +35,16 @@ const Opiniones = () => {
   return (
     <div
       className="w-full md:h-[1200px] grid grid-cols-1 pt-10"
-      style={{
-        backgroundImage: "url('/img/backs/BG_03.png')",
-
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "",
-      }}
+     
     >
-      <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl  ">
+       <video
+      src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505944/VideosXcien/BG06_avuunx.mp4"
+      autoPlay
+      loop
+      muted
+      className="bg-cover w-full h-full hidden sm:grid "
+    />
+      <div className=" sm:-translate-y-[800px]" > <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl">
         <h1>Certificaciones</h1>
         <div className="pt-10 flex items-center">
           {" "}
@@ -548,7 +549,9 @@ const Opiniones = () => {
             </div>
           </div>{" "}
         </Slider>
-      </div>
+      </div></div>
+
+     
     </div>
   );
 };
