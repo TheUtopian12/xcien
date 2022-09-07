@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import contacto from "./Contacto.png";
+import contacto from "./Contacto-White.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -35,7 +35,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-10 ease-in duration-700 h-[110px]"
     >
-      <div className="max-w-screen m-auto flex justify-between items-center p-4 text-white pl-16 pr-16">
+      <div className="max-w-screen m-auto flex justify-between items-center p-0 text-white pl-16 pr-16">
         <Link href="/" style={{ color: `${textColor}` }}>
           <img src={url} style={{ width: ancho }} />
         </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
             <Image
               src={contacto}
               width={200}
-              height={42}
+              height={100}
               className="grayscale"
             />
           </Link>

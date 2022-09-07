@@ -35,7 +35,7 @@ const Movil = () => {
                 <Image src={view} width={100} height={80} />
               </div>
               <p className="pt-2 md:text-xs lg:text-base">
-                Visualiza tus servicios activos y su rendimiento
+              Visualiza el estado de tus servicios y sus consumos
               </p>
             </div>
 
@@ -44,7 +44,7 @@ const Movil = () => {
               <div className="w-[60px] mb-2 mt-5 ml-[40%]">
                 <Image src={tech} width={100} height={90} />
               </div>
-              <p className="md:text-xs lg:text-base">Reporte y seguimiento con Soporte técnico</p>
+              <p className="md:text-xs lg:text-base">Genera y da seguimiento a reportes de servicio</p>
             </div>
             <div>
               <div className="w-[60px] mb-2 mt-5 ml-[40%]">

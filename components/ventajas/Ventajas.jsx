@@ -47,9 +47,10 @@ const Ventajas = () => {
         className="bg-cover w-full h-screen hidden sm:grid sm:translate-y-[160px]"
       />
       <div
-        className="flex items-center justify-center gap-9 gapt w-full  h-full sm:h-[10px] pt-32 sm:-translate-y-[350px]"
+        className="flex flex-col items-center justify-center gap-9 gapt w-full  h-full sm:h-[10px] pt-32 sm:-translate-y-[350px]"
        
       >
+        <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f]">Ventajas</h1>
         <div className="hidden lg:flex ">
           <Expanding data={images} />
         </div>
