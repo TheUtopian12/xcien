@@ -35,10 +35,10 @@ const images = [
     active: false,
   },
 ];
-const Ventajas = () => {
+const Ventajas = () => { 
   return (
     
-    <div className="h-[120vh] pt-10">
+    <div className="h-[120vh] pt-20">
     <video
       src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505928/VideosXcien/BG04_xkkw9j.mp4"
       autoPlay
