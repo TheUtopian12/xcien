@@ -33,7 +33,7 @@ const settings3 = {
 };
 const Opiniones = () => {
   return (
-    <div className="h-[120vh] pt-10">
+    <div className="h-[140vh] pt-10">
       <video
         src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505931/VideosXcien/BG03_xhsdtj.mp4"
         autoPlay
