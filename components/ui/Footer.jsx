@@ -17,7 +17,7 @@ const Footer = () => {
       className="bg-cover w-full  hidden sm:grid md:translate-y-[100px]"
     />
       <footer
-        className="p-4   shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[250px]"
+        className="p-4   shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[330px]"
         
         
       
@@ -71,7 +71,10 @@ const Footer = () => {
             </p>
           </div>
         </div>
+
         <div className="flex text-white xl:justify-end justify-center 2xl:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0">
+            <div><a href=""><h1 className="translate-y-11 translate-x-11">Aviso de Privacidad    |    Cumplimiento IFT y PROFECO</h1></a></div>
+
           <div className="flex items-center gap-2">
             <Image src={Facebook} width={20} height={20} />
             xcien
@@ -84,7 +87,9 @@ const Footer = () => {
             <Image src={Linkedin} width={20} height={20} />
             xcien
           </div>
+          
         </div>
+    
       </footer>
     </section>
   );

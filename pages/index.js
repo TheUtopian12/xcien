@@ -17,16 +17,19 @@ export default function Home() {
   
        <Servicios />
        
-     <Opiniones />
+    
 
-      <Movil />
+      
 
       
 
       */}
       <Example />
       <Banners />
-      <Servicios /> <Ventajas /><Nosotros />
+      <Servicios />
+      <Ventajas />
+      <Nosotros /> 
+      <Opiniones /><Movil />
     </>
   );
 }

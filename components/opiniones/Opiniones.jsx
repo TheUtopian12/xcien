@@ -34,7 +34,7 @@ const settings3 = {
 const Opiniones = () => {
   return (
     <div
-      className="w-full md:h-[1200px] grid grid-cols-1 pt-10"
+      className="w-full md:h-[1300px] grid grid-cols-1 pt-10"
      
     >
        <video
