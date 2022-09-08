@@ -39,26 +39,21 @@ function Banners() {
   };
 
   return (
-    <div className="bg-gradient-to-t from-black to-black">
-      <div
-        className="h-[650px] w-full pt-40"
-        style={{
-          backgroundImage: "url('/img/backs/BG_S02.png')",
-          opacity: "90%",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="hidden sm:flex">
-          <Card />
-        </div>
+    <div className="bg-gradient-to-t from-black to-black h-[350px] sm:h-[300px] md:h-[500px] lg:h-screen">
+      <video
+        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505901/VideosXcien/BG02_epjpva.mp4"
+        autoPlay
+        loop
+        muted
+        className="bg-cover w-full "
+      />
 
-        <div className="grid sm:hidden  ">
-         
-          <CardVertical />
-         
-        </div>
+      <div className="hidden sm:flex relative sm:top-[-300px]  md:top-[-350px] lg:top-[-400px] xl:top-[-500px] 2xl:top-[-800px]">
+        <Card />
+      </div>
+
+      <div className="grid sm:hidden relative top-[-200px] ">
+        <CardVertical />
       </div>
     </div>
   );

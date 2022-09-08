@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <ParallaxProvider>
         <Component {...pageProps} />
       </ParallaxProvider>
-      <Footer/>
+      
     </>
   );
 }

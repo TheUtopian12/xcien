@@ -37,28 +37,31 @@ const images = [
 ];
 const Ventajas = () => {
   return (
-    <div>
-      {" "}
-      <video
-        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505928/VideosXcien/BG04_xkkw9j.mp4"
-        autoPlay
-        loop
-        muted
-        className="bg-cover w-full h-screen hidden sm:grid sm:translate-y-[160px]"
-      />
-      <div
-        className="flex flex-col items-center justify-center gap-9 gapt w-full  h-full sm:h-[10px] pt-32 sm:-translate-y-[350px]"
-       
-      >
-        <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f]">Ventajas</h1>
-        <div className="hidden lg:flex ">
-          <Expanding data={images} />
-        </div>
-        <div className="lg:hidden flex justify-center pb-10">
-          <ExpandingVertical data={images} />
-        </div>
-      </div>
-    </div>
+    
+    <div className="h-[120vh] pt-10">
+    <video
+      src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505928/VideosXcien/BG04_xkkw9j.mp4"
+      autoPlay
+      loop
+      muted
+      className="bg-cover w-full xl:h-screen hidden sm:grid "
+    />
+     <section className="relative top-[200vh] sm:top-[150px] md:top-[-450px] lg:top-[-600px] xl:top-[-500px] 2xl:top-[-900px] text-center">
+          <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f] pb-10">
+            Ventajas
+          </h1>
+          <div className="hidden lg:flex lg:justify-center">
+            <Expanding data={images} />
+          </div>
+          <div className="lg:hidden flex justify-center pb-10">
+            <ExpandingVertical data={images} />
+          </div>
+        </section>
+  </div>
+
+
+      
+    
   );
 };
 

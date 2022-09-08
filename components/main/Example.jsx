@@ -82,7 +82,6 @@ const Example = () => {
                    2xl:translate-x-[1080px]
                    2xl:translate-y-[210px]
                    2xl:w-[520px]
-                   pt-10
                    ">
                     <div>
                       <p className="text-white text-center text-xl 
@@ -122,7 +121,7 @@ const Example = () => {
                       </button>
                     </div>
 
-                    <div className="mt-[110px] md:mt-[100px] lg:mt-[50px]  xl:translate-y-[90px] 2xl:-translate-y-[130px] 2xl:w-[1200px] 2xl:-translate-x-[770px] ">
+                    <div className="mt-[110px] md:mt-[100px] lg:mt-[240px] xl:mt-[100px] 2xl:mt-[240px]  xl:translate-y-[90px] 2xl:-translate-y-[130px] 2xl:w-[1200px] 2xl:-translate-x-[770px] ">
                       <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-green-400 text-center ">
                         Somos el operador inalámbrico empresarial más grande de
                         México

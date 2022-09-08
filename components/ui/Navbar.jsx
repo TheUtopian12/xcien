@@ -35,14 +35,14 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-10 ease-in duration-700 h-[110px]"
     >
-      <div className="max-w-screen m-auto flex justify-between items-center p-0 text-white pl-16 pr-16">
+      <div className="max-w-screen m-auto flex justify-between items-center p-0 sm:mt-[-30px] text-white sm:pl-16 sm:pr-0">
         <Link href="/" style={{ color: `${textColor}` }}>
           <img src={url} style={{ width: ancho }} />
         </Link>
 
         <ul
           style={{ color: `${textColor}` }}
-          className="hidden sm:flex font-semibold pl-[10%] "
+          className="hidden sm:flex font-semibold pl-[5%] "
         >
           <li className="p-4">
             <Link href="/#inicio">Inicio</Link>
@@ -64,9 +64,9 @@ const Navbar = () => {
           <Link href="/">
             <Image
               src={contacto}
-              width={200}
-              height={100}
-              className="grayscale"
+              width={'320px'}
+              height={'150px'}
+              className="grayscale hidden"
             />
           </Link>
         </ul>

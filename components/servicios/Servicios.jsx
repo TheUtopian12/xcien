@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import Image from "next/image";
 import arrow from "./icons/Arrow.png";
 import internet from "./icons/internet.png";
@@ -11,23 +11,16 @@ import Card from "./Card";
 
 //Borroso fondo
 const Servicios = () => {
-  let color = "#083920";
-
   return (
-    <>
-      {" "}
+    <div className="h-[120vh] pt-10">
       <video
         src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505931/VideosXcien/BG03_xhsdtj.mp4"
         autoPlay
         loop
         muted
-        className="bg-cover w-full h-screen hidden sm:grid"
+        className="bg-cover w-full xl:h-screen hidden sm:grid "
       />
-      <div
-        id="servicios"
-        className="w-full  justify-center pt-32 sm:bg-transparent  md:h-[12px] md:-translate-y-[1200px] bg-cover bgImage sm:hidden "
-        
-      >
+      <section className="relative sm:top-[-300px] md:top-[-450px] lg:top-[-700px] xl:top-[-700px] 2xl:top-[-900px]">
         <div className="grid grid-cols-1 justify-center text-center">
           {" "}
           <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f]">
@@ -136,122 +129,8 @@ const Servicios = () => {
             />
           </div>
         </div>
-      </div>
-      <div
-        id="servicios"
-        className="w-full  justify-center pt-32 sm:bg-transparent  md:h-[12px] md:-translate-y-[800px] hidden sm:grid"
-        
-      >
-        <div className="grid grid-cols-1 justify-center text-center">
-          {" "}
-          <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f]">
-            Servicios
-          </h1>
-          <h2 className="sm:text-xl text-lg sm:ml-20 sm:mr-20 ml-5 mr-5 pt-5 text-white">
-            La combinación de diferentes tecnologías y nuestra experiencia nos
-            permite construir una solución personalizada a las necesidades de tu
-            negocio o empresa.
-          </h2>
-        </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-9 w-full mt-20 md:mb-10 xl:pl-10 xl:pr-10 transition ease-in-out ">
-          <div className={`flex justify-center 2xl:translate-x-48`}>
-            <Card
-              titulo={"Internet"}
-              imagen={internet}
-              arrow={arrow}
-              descripcion={
-                <>
-                  Soluciones de{" "}
-                  <span className="font-bold">
-                    conectividad confiables y seguras
-                  </span>{" "}
-                  para la base de la transformación de tu empresa
-                </>
-              }
-            />
-          </div>
-
-          <div className="flex justify-center ">
-            <Card
-              titulo={"SDWAN"}
-              imagen={sdwan}
-              arrow={arrow}
-              descripcion={
-                <>
-                  Nuestro servicio administrado hace que todos tus sitios
-                  trabajen juntos hacia un objetivo común, ya que{" "}
-                  <span className="font-bold">centraliza y simplifica </span>
-                  tu red de manera más inteligente.
-                </>
-              }
-            />
-          </div>
-
-          <div className="flex justify-center 2xl:-translate-x-48">
-            <Card
-              titulo={"Telefonía IP"}
-              imagen={ip}
-              arrow={arrow}
-              descripcion={
-                <>
-                  Conecte a empleados y clientes con nuestros{" "}
-                  <span className="font-bold">
-                    servicios de voz y colaboración
-                  </span>{" "}
-                  desde la oficina, de forma remota o móvil.
-                </>
-              }
-            />
-          </div>
-          <div className="flex justify-center 2xl:translate-x-48">
-            <Card
-              titulo={"CIBERSEGURIDAD"}
-              imagen={ciber}
-              arrow={arrow}
-              descripcion={
-                <>
-                  <span className="font-bold">Seguridad administrada</span> 100%
-                  en la nube. La instalación y la administración remota es más
-                  simple.
-                </>
-              }
-            />
-          </div>
-          <div className="flex justify-center ">
-            <Card
-              titulo={"VPN"}
-              imagen={vpn}
-              arrow={arrow}
-              descripcion={
-                <>
-                  Permite a los usuarios autorizados{" "}
-                  <span className="font-bold">
-                    acceder de forma segura a la información
-                  </span>{" "}
-                  y los recursos de la red de tu empresa desde ubicaciones
-                  remotas.
-                </>
-              }
-            />
-          </div>
-          <div className="flex justify-center 2xl:-translate-x-48">
-            <Card
-              titulo={"Data Center"}
-              imagen={bigdata}
-              arrow={arrow}
-              descripcion={
-                <>
-                  Renta un espacio en uno de nuestros racks y{" "}
-                  <span className="font-bold">
-                    almacena de forma segura tu información.
-                  </span>
-                </>
-              }
-            />
-          </div>
-        </div>
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 

@@ -13,20 +13,20 @@ export default function Home() {
     <>
       {/*  
       <div className="h-[20px] bg-gradient-to-t from-[#012701] to-black"></div>
+ 
+  
+       <Servicios />
+       
+     <Opiniones />
 
-
+      <Movil />
 
       
 
       */}
-
- <Example />
-       <Banners />
-       <Servicios /> <Ventajas />
-       <Nosotros />
-     <Opiniones />
-
-      <Movil />
+      <Example />
+      <Banners />
+      <Servicios /> <Ventajas /><Nosotros />
     </>
   );
 }
