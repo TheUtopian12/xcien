@@ -16,8 +16,20 @@ html {
 
 .bgImage {
   background-image: url('/img/Wave BG.png');
-
-}
+ 
+} 
+.bgImage2 {
+  background-image: url('/img/backs/BG_S02.png');
+ 
+} 
+.bgImage3 {
+  background-image: url('/img/backs/BG_03.png');
+ 
+} 
+.bgImage4 {
+  background-image: url('/img/backs/BG_S04.png');
+ 
+} 
 
 .App {}
 

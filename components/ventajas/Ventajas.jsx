@@ -38,15 +38,15 @@ const images = [
 const Ventajas = () => { 
   return (
     
-    <div className="h-[120vh] pt-20">
+    <div className="h-[100vh] bg-cover bgImage4">
     <video
       src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505928/VideosXcien/BG04_xkkw9j.mp4"
       autoPlay
       loop
       muted
-      className="bg-cover w-full xl:h-screen hidden sm:grid "
+      className="bg-cover w-full hidden sm:grid "
     />
-     <section className="relative top-[200vh] sm:top-[150px] md:top-[-450px] lg:top-[-600px] xl:top-[-500px] 2xl:top-[-900px] text-center">
+     <section className="relative top-[10vh] sm:top-[150px] md:top-[-450px] lg:top-[-600px] xl:top-[-500px] 2xl:top-[-900px] text-center">
           <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f] pb-10">
             Ventajas
           </h1>

@@ -64,15 +64,15 @@ const Navbar = () => {
           <Link href="/">
             <Image
               src={contacto}
-              width={'320px'}
-              height={'150px'}
+              width={"320px"}
+              height={"150px"}
               className="grayscale hidden"
             />
           </Link>
         </ul>
         {/*mobile*/}
 
-        <div className="block sm:hidden z-10" onClick={handleNav}>
+        <div className="block sm:hidden z-10 pr-4" onClick={handleNav}>
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
         <div

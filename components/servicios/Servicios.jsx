@@ -12,14 +12,15 @@ import Card from "./Card";
 //Borroso fondo
 const Servicios = () => {
   return (
-    <div className="h-[120vh] pt-10">
+    <div className="sm:h-[100vh] pt-10 bgImage3 xl:bgImage h-full pb-10">
       <video
         src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505931/VideosXcien/BG03_xhsdtj.mp4"
         autoPlay
         loop
         muted
-        className="bg-cover w-full xl:h-screen hidden sm:grid "
+        className=" bg-cover w-full  hidden sm:grid "
       />
+     
       <section className="relative sm:top-[-300px] md:top-[-450px] lg:top-[-700px] xl:top-[-700px] 2xl:top-[-900px]">
         <div className="grid grid-cols-1 justify-center text-center">
           {" "}

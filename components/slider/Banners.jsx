@@ -45,14 +45,14 @@ function Banners() {
         autoPlay
         loop
         muted
-        className="bg-cover w-full "
+        className="bg-cover w-full hidden sm:grid"
       />
 
       <div className="hidden sm:flex relative sm:top-[-300px]  md:top-[-350px] lg:top-[-400px] xl:top-[-500px] 2xl:top-[-800px]">
         <Card />
       </div>
 
-      <div className="grid sm:hidden relative top-[-200px] ">
+      <div className="grid sm:hidden relative bg-cover bgImage2 ">
         <CardVertical />
       </div>
     </div>
