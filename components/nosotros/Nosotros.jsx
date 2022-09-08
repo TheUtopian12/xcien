@@ -53,8 +53,10 @@ const Nosotros = () => {
         className="h-[220px] 
         
         sm:h-[430px]
-        md:-translate-y-[200px]
-        md:h-[600px] lg:h-[350px] lg:w-auto xl:h-[400px] xl:w-auto  2xl:h-[600px] 2xl:w-auto items-center text-white "
+        md:-translate-y-[50px]
+        md:h-[600px] 
+        lg:-translate-y-[0px]
+        lg:h-[350px] lg:w-auto xl:h-[400px] xl:w-auto  2xl:h-[600px] 2xl:w-auto items-center text-white "
         style={{
           backgroundImage: "url('/img/Back-Nosotros.png')",
 
