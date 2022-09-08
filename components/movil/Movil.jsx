@@ -26,7 +26,7 @@ const Movil = () => {
         <div className="sm:col-span-2 pt-10">
           <div className="text-center">
 
-                  <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-br from-green-500 via-green-500 to-blue-500 text-center ">
+                  <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-br from-blue-500 via-green-500 to-green-500 text-center ">
                          <span className="text-white"> Descarga nuestra</span> xcienApp
                       </h1>
             <h1 className="sm:text-4xl text-xl font-bold text-[#2adc2f] ">
