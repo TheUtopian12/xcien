@@ -38,6 +38,10 @@ html {
   background-image: url('/img/backs/BG_06.png');
  
 } 
+.bgNosotros {
+  background-image: url('/img/gif/gifNosotros.gif');
+ 
+} 
 
 .App {}
 
