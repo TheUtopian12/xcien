@@ -28,7 +28,7 @@ const Footer = () => {
 
           <div className="text-white w-[250px] 2xl:translate-x-[300px] text-sm ">
             <p>Av. Eugenio Garza Sada 3820, Roma, 64780 Monterrey, N.L.</p>
-            <svg className="translate-x-56 -translate-y-8 lg:-translate-x-8 lg:-translate-y-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2adc2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <svg className="translate-x-56 -translate-y-8 lg:-translate-x-8 lg:-translate-y-8 feather feather-map-pin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2adc2f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
    
             
             <p>
