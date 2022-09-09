@@ -22,7 +22,7 @@ const Movil = () => {
       <div className="grid sm:grid-cols-3 2xl:-translate-y-[900px]  xl:-translate-y-[650px] ">
         <div className="flex items-center justify-center pt-10">
           <div className="w-[200px] sm:w-[400px] ">
-            <img src="/img/iPhoneb 14.png" width={300} height={400} />
+            <img src="/img/iPhoneb 14.png" width={290} height={290} />
           </div>
         </div>
         <div className="sm:col-span-2 pt-10">
