@@ -35,7 +35,7 @@ const Nosotros = () => {
             <span className="font-bold">¡Estamos listos para asesorarte!</span>
           </p>
         </div>
-        <div className=" md:w-[90 vh] ">
+        <div className=" md:w-[90vh] ">
           <Image src={Gent}/>
         </div>
       </div>
