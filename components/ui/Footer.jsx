@@ -6,6 +6,7 @@ import Facebook from "./facebook.png";
 import Linkedin from "./linkedin.png";
 import Instagram from "./instagram.png";
 import Link from "next/link";
+import { FiMapPin } from "react-icons/fi";
 const Footer = () => {
   return (
     <section>
@@ -26,6 +27,7 @@ const Footer = () => {
           </div>
 
           <div className="text-white w-[250px] 2xl:translate-x-[300px] text-sm ">
+            <FiMapPin size={20} className='mb-2'/>
             <p>Av. Eugenio Garza Sada 3820, Roma, 64780 Monterrey, N.L.</p>
             <br />
             <p>
@@ -37,6 +39,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="text-white w-[250px] 2xl:translate-x-[200px] text-sm">
+            <br />
             <p className="font-semibold">Contrataciones</p>
             <p>¡Llámanos sin costo! 800 288 0092</p> <br />
             <p>
