@@ -39,9 +39,9 @@ function Banners() {
   };
 
   return (
-    <div className="bg-gradient-to-t from-black to-black h-[350px] sm:h-[300px] md:h-[500px] lg:h-screen">
+    <div className="bg-gradient-to-t from-black to-transparent h-[350px] sm:h-[300px] md:h-[500px] lg:h-screen pb-10 mb-10">
       <video
-        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505901/VideosXcien/BG02_epjpva.mp4"
+        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662736548/VideosXcien/BG_Web_xcien_qqdfem.mp4"
         autoPlay
         loop
         muted

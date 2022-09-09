@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700&family=Montserrat:wght@100;400&display=swap');
 
 html {
-  background-image: url('/img/gif/slidebg.gif');
+  background-color: black;
   font-family: 'Inter', sans-serif;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;

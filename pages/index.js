@@ -8,16 +8,20 @@ import Servicios from "../components/servicios/Servicios";
 import Banners from "../components/slider/Banners";
 import Card from "../components/slider/Card";
 import Ventajas from "../components/ventajas/Ventajas";
+import Loading from './Loading'
 export default function Home() {
   return (
     <>
-      <Example />
+
+    {/** <Example />
       <Banners />
       <Servicios />
       <Ventajas />
       <Nosotros /> 
       <Opiniones />
-      <Movil />
+      <Movil /> */}
+      <Loading/> 
+     
     </>
   );
 }
