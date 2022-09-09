@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(true)
   setTimeout(()=>{
     setLoading(false)
-  },15000)
+  },5000)
   return (
     <>
 

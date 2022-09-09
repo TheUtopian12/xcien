@@ -11,8 +11,6 @@ import Ventajas from "../components/ventajas/Ventajas";
 export default function Home() {
   return (
     <>
-    
-
       <Example />
       <Banners />
       <Servicios />
@@ -20,7 +18,6 @@ export default function Home() {
       <Nosotros /> 
       <Opiniones />
       <Movil />
-    
     </>
   );
 }
