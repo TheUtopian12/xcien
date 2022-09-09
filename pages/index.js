@@ -11,20 +11,16 @@ import Ventajas from "../components/ventajas/Ventajas";
 export default function Home() {
   return (
     <>
-      {/*  
-      <div className="h-[20px] bg-gradient-to-t from-[#012701] to-black"></div>
- 
     
-      
-      
-      
-       
-     
-      */}{" "}
+
       <Example />
       <Banners />
       <Servicios />
-      <Ventajas /><Nosotros /> <Opiniones /><Movil />
+      <Ventajas />
+      <Nosotros /> 
+      <Opiniones />
+      <Movil />
+    
     </>
   );
 }
