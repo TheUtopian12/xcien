@@ -33,7 +33,7 @@ const settings3 = {
 };
 const Opiniones = () => {
   return (
-    <div className="bg-cover  sm:h-[170vh]  h-full">
+    <div className="bg-cover  sm:h-[180vh]  h-full">
       <video
         src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662736548/VideosXcien/BG_Web_xcien_qqdfem.mp4"
         autoPlay

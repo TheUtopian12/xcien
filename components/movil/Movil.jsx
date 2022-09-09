@@ -9,7 +9,7 @@ import AppStore from "./assets/AppStore.png";
 const Movil = () => {
   return (
     <div
-      className="w-full pt-36 xl:pt-0  2xl:pt-0 bgImage  md:h-[99vh] h-full  md:-translate-y-[00px]"
+      className="w-full pt-36 xl:pt-0  2xl:pt-0 bgImage xl:h-[100vh] xl:pb-0  2xl:h-[99vh] h-full  md:-translate-y-[00px]"
      
     >
       <video
