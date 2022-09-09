@@ -17,7 +17,7 @@ const Footer = () => {
         muted
         className="bg-cover w-full  hidden sm:grid md:translate-y-[10px]"
       />
-      <footer className="p-4 shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[430px] bgFotter ">
+      <footer className="p-4 shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[430px] bgFooter  ">
         <div />
 
         <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5 xl:translate-y-28">
