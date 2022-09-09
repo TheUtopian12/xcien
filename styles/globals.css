@@ -46,6 +46,10 @@ html {
   background-image: url('/img/gif/movil.gif');
  
 }  
+.bgFooter {
+  background-image: url('/img/gif/footer.gif');
+ 
+}  
 
 .App {}
 

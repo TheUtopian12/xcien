@@ -10,7 +10,7 @@ export default class MultipleItems extends Component {
       slidesToScroll: 1
     };
     return (
-      <div className="2xl:w-[1800px] sm:w-[1280px] w-[360px] pr-36 pl-36 text-center">
+      <div className="2xl:w-[1800px] sm:w-[1280px] w-[360px] pr-4 pl-4 sm:pr-36 sm:pl-36 text-center">
         <Slider {...settings} className="text-center" >
          <div className="ml-[15%] 2xl:ml-[25%]">
             <img src="/img/Empresas 1/Cambium.png" className="w-40"/>

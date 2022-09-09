@@ -9,15 +9,15 @@ import Link from "next/link";
 import { FiMapPin } from "react-icons/fi";
 const Footer = () => {
   return (
-    <section className="h-2 ">
+    <section className="xl:h-2 translate-y-1">
       <video
         src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505910/VideosXcien/BG08_ykemkz.mp4"
         autoPlay
         loop
         muted
-        className="bg-cover w-full  hidden sm:grid md:translate-y-[00px]"
+        className="bg-cover w-full  hidden sm:grid md:translate-y-[10px]"
       />
-      <footer className="p-4  shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[430px] bg-cover ">
+      <footer className="p-4 shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[430px] bgFooter bg-black ">
         <div />
 
         <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5 xl:translate-y-28">
