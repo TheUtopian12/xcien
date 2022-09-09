@@ -41,7 +41,11 @@ html {
 .bgNosotros {
   background-image: url('/img/gif/gifNosotros.gif');
  
-} 
+}
+.bgMovil {
+  background-image: url('/img/gif/movil.gif');
+ 
+}  
 
 .App {}
 

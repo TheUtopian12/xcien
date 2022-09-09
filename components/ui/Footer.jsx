@@ -9,18 +9,18 @@ import Link from "next/link";
 import { FiMapPin } from "react-icons/fi";
 const Footer = () => {
   return (
-    <section>
+    <section className="h-2 ">
       <video
         src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505910/VideosXcien/BG08_ykemkz.mp4"
         autoPlay
         loop
         muted
-        className="bg-cover w-full  hidden sm:grid md:translate-y-[100px]"
+        className="bg-cover w-full  hidden sm:grid md:translate-y-[00px]"
       />
-      <footer className="p-4 shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[330px] bg-cover bgImage5">
+      <footer className="p-4  shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[430px] bg-cover ">
         <div />
 
-        <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5">
+        <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5 xl:translate-y-28">
           <div className="sm:col-span-2 md:w-[400px] flex ">
             {" "}
             <Image src={logoB} className="mr-3 h-8" alt="XCIEN Logo" />
@@ -50,7 +50,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="text-white w-[250px] 2xl:translate-x-[100px] text-sm">
+          <div className="text-white w-[250px] 2xl:translate-x-[100px] text-sm ">
             <p className="pb-3 font-semibold">¿Ya eres cliente?</p>
 
             <p>
@@ -71,13 +71,18 @@ const Footer = () => {
         </div>
         <div>
           <a href="">
-            <h1 className="flex text-white xl:justify-end justify-center 2xl:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0">
+            <h1 className="flex text-white xl:justify-end justify-center 2xl:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0 xl:translate-y-14 xl:-translate-x-52
+            2xl:translate-y-8 2xl:-translate-x-0 
+            
+            ">
               Aviso de Privacidad | Cumplimiento IFT y PROFECO
             </h1>
           </a>
         </div>
 
-        <div className="flex text-white xl:justify-end justify-center 2xl:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0">
+        <div className="flex text-white xl:justify-end justify-center 2xl:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0 xl:translate-y-16
+        2xl:translate-y-10
+        ">
           <div className="flex items-center gap-2">
             <Image src={Facebook} width={20} height={20} />
             xcien

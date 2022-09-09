@@ -33,24 +33,30 @@ const settings3 = {
 };
 const Opiniones = () => {
   return (
-    <div className="bg-cover bgImage3 sm:h-[120vh] h-full">
+    <div className="bg-cover  sm:h-[170vh]  h-full">
       <video
         src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662736548/VideosXcien/BG_Web_xcien_qqdfem.mp4"
         autoPlay
         loop
         muted
-        className="bg-cover  hidden sm:grid z-1 "
-      />
-      <div className="relative top-[10vh] sm:top-[150px] md:top-[-450px] lg:top-[-600px] xl:top-[-500px] 2xl:top-[-900px]">
+        className="bg-cover hidden sm:grid  "
+      /><video
+      src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662736548/VideosXcien/BG_Web_xcien_qqdfem.mp4"
+      autoPlay
+      loop
+      muted
+      className="bg-cover hidden sm:grid "
+    />
+      <div className="relative top-[10vh] sm:top-[150px] md:top-[-450px] lg:top-[-600px] xl:top-[-1450px] 2xl:top-[-1900px]">
         {" "}
-        <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-10 pb-12 ">
+        <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-10 pb-12">
           <h1>Certificaciones</h1>
           <div className="pt-10 flex items-center">
             {" "}
             <Empresas1 />
           </div>
         </div>
-        <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-10 pb-10">
+        <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-28 pb-24">
           <h1>Alianzas comerciales</h1>
           <div className="pt-10 flex items-center">
             {" "}

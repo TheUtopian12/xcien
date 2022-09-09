@@ -9,15 +9,17 @@ import AppStore from "./assets/AppStore.png";
 const Movil = () => {
   return (
     <div
-      className="w-full pt-28 bg-black pb-10 md:-translate-y-[00px]"
-      style={{
-        backgroundImage: "url('/img/backs/BG_03.png')",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "",
-      }}
+      className="w-full pt-36 xl:pt-0  2xl:pt-0 bgImage  h-[99vh]  md:-translate-y-[00px]"
+     
     >
-      <div className="grid sm:grid-cols-3 ">
+      <video
+      src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505931/VideosXcien/BG03_xhsdtj.mp4"
+      autoPlay
+      loop
+      muted
+      className="bg-cover hidden sm:grid "
+    />
+      <div className="grid sm:grid-cols-3 2xl:-translate-y-[900px]  xl:-translate-y-[650px] ">
         <div className="flex items-center justify-center pt-10">
           <div className="w-[200px] sm:w-[400px] ">
             <img src="/img/iPhoneb 14.png" width={300} height={400} />
@@ -25,7 +27,7 @@ const Movil = () => {
         </div>
         <div className="sm:col-span-2 pt-10">
           <div className="text-center">
-            <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-br from-blue-500 via-green-500 to-green-500 text-center ">
+            <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-b from-green-500 via-green-500 to-blue-500 text-center ">
               <span className="text-white"> Descarga nuestra</span> xcienApp
             </h1>
             <h1 className="sm:text-4xl text-xl font-bold text-[#2adc2f] "></h1>

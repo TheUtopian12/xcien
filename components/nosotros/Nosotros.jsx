@@ -3,7 +3,7 @@ import Image from "next/image";
 import Gent from "../../public/img/Back-Nosotros.png";
 const Nosotros = () => {
   return (
-    <div className="bg-cover bg-black sm:h-[120vh] xl:pt-20">
+    <div className="bg-cover bg-black sm:h-[90vh] xl:pt-20">
       
       <h1 className="text-5xl font-bold text-[#2adc2f] text-center mb-10">Nosotros</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-between">

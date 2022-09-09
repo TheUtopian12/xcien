@@ -38,7 +38,7 @@ const images = [
 const Ventajas = () => { 
   return (
     
-    <div className="h-[100vh] bg-cover  pt-0 mt-[-11px]">
+    <div className="h-[100vh] bg-cover  pt-20 mt-[-11px]">
     <video
       src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662736548/VideosXcien/BG_Web_xcien_qqdfem.mp4"
       autoPlay

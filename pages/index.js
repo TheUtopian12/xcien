@@ -18,13 +18,13 @@ export default function Home() {
       
       
       
-      <Opiniones /> <Movil />
+       
      
       */}{" "}
       <Example />
       <Banners />
       <Servicios />
-      <Ventajas /><Nosotros /> 
+      <Ventajas /><Nosotros /> <Opiniones /><Movil />
     </>
   );
 }
