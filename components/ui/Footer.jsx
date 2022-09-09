@@ -27,9 +27,10 @@ const Footer = () => {
           </div>
 
           <div className="text-white w-[250px] 2xl:translate-x-[300px] text-sm ">
-            <FiMapPin size={20} className='mb-2'/>
             <p>Av. Eugenio Garza Sada 3820, Roma, 64780 Monterrey, N.L.</p>
-            <br />
+            <svg className="translate-x-56 -translate-y-8 lg:-translate-x-8 lg:-translate-y-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2adc2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+   
+            
             <p>
               <span className="text-[#04ce04]">Horario de oficina</span> <br />
               Lunes a Jueves de 9:00 a 19:00 hrs.
@@ -39,7 +40,6 @@ const Footer = () => {
             </p>
           </div>
           <div className="text-white w-[250px] 2xl:translate-x-[200px] text-sm">
-            <br />
             <p className="font-semibold">Contrataciones</p>
             <p>¡Llámanos sin costo! 800 288 0092</p> <br />
             <p>

@@ -23,14 +23,8 @@ export default class Card extends Component {
     return (
       <div style={Card.CONTAINER_STYLE} className="flex">
         <div>
-          <button onClick={() => this.Carousel.prev()} className="text-white">
-            <img
-              src="/img/ArrowR.PNG"
-              alt=""
-              className="2xl:translate-x-[120px] lg:-translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:-translate-x-[50px]
-            sm:-translate-y-[90px] sm:-translate-x-[30px] rotate-180
-            "
-            />
+          <button onClick={() => this.Carousel.prev()} className="text-white pl-12">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"  stroke="#2adc2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-arrow-left-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line></svg>
           </button>
         </div>
 
@@ -65,14 +59,8 @@ export default class Card extends Component {
           </div>
         </ReactCardCarousel>
         <div>
-          <button onClick={() => this.Carousel.next()} className="text-white">
-            <img
-              src="/img/ArrowR.PNG"
-              alt=""
-              className="2xl:-translate-x-[120px] lg:-translate-x-[80px] lg:-translate-y-[80px] md:-translate-y-[100px] md:-translate-x-[50px]
-            sm:-translate-y-[90px] sm:-translate-x-[30px] 
-            "
-            />
+          <button onClick={() => this.Carousel.next()} className="text-white pr-12">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#2adc2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
           </button>
         </div>
       </div>

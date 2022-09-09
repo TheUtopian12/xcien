@@ -35,7 +35,7 @@ const Opiniones = () => {
   return (
     <div className="bg-cover bgImage3 sm:h-[120vh] h-full">
       <video
-        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505928/VideosXcien/BG04_xkkw9j.mp4"
+        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662736548/VideosXcien/BG_Web_xcien_qqdfem.mp4"
         autoPlay
         loop
         muted

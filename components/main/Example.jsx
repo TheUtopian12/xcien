@@ -16,7 +16,7 @@ const Example = () => {
               {
                 speed: -45,
                 children: (
-                  <div className="absolute inset-0 flex  bg-cover bgImage h-[80%]" />
+                  <div className="absolute inset-0 flex  bg-cover bgImage6 h-[80%]" />
                 ),
               },
 
