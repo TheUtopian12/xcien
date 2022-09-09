@@ -12,9 +12,9 @@ import Card from "./Card";
 //Borroso fondo
 const Servicios = () => {
   return (
-    <div className="sm:h-[100vh] pt-10 bgImage3 xl:bgImage h-full pb-10">
+    <div className="sm:h-[105vh] pt-10 bgImage3 xl:bgImage h-full pb-10">
       <video
-        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505931/VideosXcien/BG03_xhsdtj.mp4"
+        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505928/VideosXcien/BG04_xkkw9j.mp4"
         autoPlay
         loop
         muted
