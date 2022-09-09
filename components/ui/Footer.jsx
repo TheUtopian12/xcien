@@ -20,7 +20,7 @@ const Footer = () => {
         <div />
 
         <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5">
-          <div className="sm:col-span-2 w-[400px] flex ">
+          <div className="sm:col-span-2  flex ">
             {" "}
             <Image src={logoB} className="mr-3 h-8" alt="XCIEN Logo" />
           </div>
