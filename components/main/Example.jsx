@@ -26,7 +26,7 @@ const Example = () => {
                 speed: -10,
                 children: (
                   <div
-                    className="absolute inset-0 flex items-center justify-center w-[800px] h-[500px] translate-y-[810px] -translate-x-24 
+                    className="absolute inset-0 flex items-center justify-center w-[800px] h-[500px] translate-y-[550px] -translate-x-24 
                     sm:w-[1000px] 
                     md:w-[1200px]
                     md:translate-y-[800px]
@@ -81,7 +81,7 @@ const Example = () => {
                 speed: 5,
                 children: (
                   <div
-                    className="flex flex-col mt-[150px] ml-3 mr-3 
+                    className="flex flex-col mt-[150px] ml-3 mr-3 pt-10
                    md:ml-9 md:mr-9
                    lg:ml-10 lg:mr-10
                    2xl:translate-x-[1080px]

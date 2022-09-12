@@ -15,7 +15,7 @@ import { Parallax } from "react-parallax";
 const Servicios = () => {
   return (
     <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={700}>
-      <div className="h-screen">
+      <div className="sm:h-screen">
       <div className="grid grid-cols-1 justify-center text-center">
         {" "}
         <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f]">

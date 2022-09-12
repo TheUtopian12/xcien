@@ -8,8 +8,8 @@ const Nosotros = () => {
       <h1 className="text-5xl font-bold text-[#2adc2f] text-center mb-10">
         Nosotros
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-between ">
-        <div className="w-[90%] h-[90%] bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50 border border-gray-900 rounded-2xl pt-10 pl-10 pr-10">
+      <div className="sm:flex gap-10 pb-10 ">
+        <div className="m-2 sm:w-[50%]  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50 border border-gray-900 rounded-2xl pt-10 pl-10 pr-10">
           {" "}
           <div className=" rounded-3xl text-white grid justify-center items-center text-lg pt-0 ">
             <p className="pt-2 mr-6 ml-6">
@@ -43,8 +43,8 @@ const Nosotros = () => {
           </div>
         </div>
 
-        <div className=" md:w-[80vh]">
-          <Image src={Gent} className="rounded-tl-[300px] rounded-br-[300px]" />
+        <div className=" md:w-[80vh] pt-5">
+          <Image src={Gent} className="sm:rounded-tl-[300px] sm:rounded-br-[300px] rounded-tl-[100px] rounded-br-[100px]" />
         </div>
       </div>
     </Parallax>
