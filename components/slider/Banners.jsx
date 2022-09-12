@@ -40,6 +40,7 @@ function Banners() {
   return (
     <Parallax Parallax bgImage="/img/BG_Flat.png" bgImageAlt="the cat" strength={100} 
     >
+      
       <div className="bg-cover sm:h-[60vh]">
         <div className="hidden sm:flex relative ">
           <Card />
@@ -49,6 +50,7 @@ function Banners() {
           <CardVertical />
         </div>
       </div>
+      
     </Parallax>
   );
 }

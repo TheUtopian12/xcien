@@ -43,7 +43,7 @@ const Nosotros = () => {
           </div>
         </div>
 
-        <div className=" md:w-[80vh] pt-5">
+        <div className=" md:w-[80vh] pt-5 sm:pt-0">
           <Image src={Gent} className="sm:rounded-tl-[300px] sm:rounded-br-[300px] rounded-tl-[100px] rounded-br-[100px]" />
         </div>
       </div>
