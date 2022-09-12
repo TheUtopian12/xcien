@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <>
 
-    {/** <Example />
+    {/**  */}
+      <Example />
       <Banners />
       <Servicios />
       <Ventajas />
       <Nosotros /> 
       <Opiniones />
-      <Movil /> */}
-      <Loading/> 
+      <Movil />
      
     </>
   );
