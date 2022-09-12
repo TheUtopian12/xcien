@@ -1,6 +1,8 @@
 import React from "react";
 import Expanding from "./Expanding";
 import ExpandingVertical from "./ExpandingVertical";
+
+import { Parallax } from "react-parallax";
 const images = [
   {
     id: 1,
@@ -38,15 +40,10 @@ const images = [
 const Ventajas = () => { 
   return (
     
-    <div className="h-[100vh] bg-cover  pt-20 mt-[-11px]">
-    <video
-      src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662736548/VideosXcien/BG_Web_xcien_qqdfem.mp4"
-      autoPlay
-      loop
-      muted
-      className="bg-cover w-full hidden sm:grid "
-    />
-     <section className="relative top-[10vh] sm:top-[150px] md:top-[-450px] lg:top-[-600px] xl:top-[-500px] 2xl:top-[-900px] text-center">
+    
+    <Parallax bgImage="/img/BG_Flat.png" bgImageAlt="the cat" strength={100}>
+    
+     <section className="pt-10 pb-10 text-center">
           <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f] pb-10">
             Ventajas
           </h1>
@@ -57,7 +54,7 @@ const Ventajas = () => {
             <ExpandingVertical data={images} />
           </div>
         </section>
-  </div>
+  </Parallax>
 
 
       

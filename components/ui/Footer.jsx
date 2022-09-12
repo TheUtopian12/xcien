@@ -9,18 +9,12 @@ import Link from "next/link";
 import { FiMapPin } from "react-icons/fi";
 const Footer = () => {
   return (
-    <section className="xl:h-2 translate-y-1 bgFooter">
-      <video
-        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505910/VideosXcien/BG08_ykemkz.mp4"
-        autoPlay
-        loop
-        muted
-        className="bg-cover w-full  hidden sm:grid md:translate-y-[10px]"
-      />
-      <footer className="p-4 shadow md:px-6 md:py-8  xl:h-[1px] h-[90%] md:-translate-y-[530px]  ">
+    <section className=" translate-y-1">
+     
+      <footer className="p-4 shadow md:px-6 md:py-8  xl:h-[50vh] h-[90%]  bgFooter bg-cover">
         <div />
 
-        <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5 xl:translate-y-28">
+        <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5 ">
           <div className="sm:col-span-2 md:w-[400px] flex ">
             {" "}
             <Image src={logoB} className="mr-3 h-8" alt="XCIEN Logo" />

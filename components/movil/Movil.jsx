@@ -6,20 +6,15 @@ import tech from "./assets/technical-support.png";
 import invoice from "./assets/invoice.png";
 import Google from "./assets/Google.png";
 import AppStore from "./assets/AppStore.png";
+
+import { Parallax } from "react-parallax";
 const Movil = () => {
   return (
-    <div
-      className="w-full pt-36 xl:pt-0  2xl:pt-0 bgImage xl:h-[100vh] xl:pb-0  2xl:h-[99vh] h-full  md:-translate-y-[00px]"
-     
-    >
-      <video
-      src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662505931/VideosXcien/BG03_xhsdtj.mp4"
-      autoPlay
-      loop
-      muted
-      className="bg-cover hidden sm:grid "
-    />
-      <div className="grid sm:grid-cols-3 2xl:-translate-y-[900px]  xl:-translate-y-[650px] ">
+
+    <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500}>
+    
+    <div className="w-full pt-36 xl:pt-0  2xl:pt-0 xl:h-[100vh] xl:pb-0  2xl:h-[70vh] h-full  md:-translate-y-[00px]">
+      <div className="grid sm:grid-cols-3 ">
         <div className="flex items-center justify-center pt-10">
           <div className="w-[200px] sm:w-[400px] ">
             <img src="/img/iPhoneb 14.png" width={290} height={290} />
@@ -28,7 +23,7 @@ const Movil = () => {
         <div className="sm:col-span-2 pt-10">
           <div className="text-center">
             <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-b from-green-500 via-green-500 to-blue-500 text-center ">
-              <span className="text-white"> Descarga nuestra</span> xcienApp
+              <span className="text-white">Descarga nuestra</span> xcienApp
             </h1>
             <h1 className="sm:text-4xl text-xl font-bold text-[#2adc2f] "></h1>
           </div>
@@ -75,6 +70,7 @@ const Movil = () => {
         </div>
       </div>
     </div>
+    </Parallax>
   );
 };
 

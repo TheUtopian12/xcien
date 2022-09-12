@@ -10,46 +10,18 @@ html {
   font-family: 'Inter', sans-serif;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
-
-
 }
 
 .bgImage {
-  background-image: url('/img/gif/slidebg.gif');
+  background-image: url('/img/BG_S04.png');
+  
  
 } 
-.bgImage2 {
-  background-image: url('/img/gif/slide2.gif');
- 
-} 
-.bgImage3 {
-  background-image: url('/img/backs/BG_03.png');
- 
-} 
-.bgImage4 {
-  background-image: url('/img/backs/BG_S04.png');
- 
-} 
-.bgImage5 {
+
+.bgFooter{
   background-image: url('/img/backs/BG_08.png');
- 
-} 
-.bgImage6 {
-  background-image: url('/img/backs/BG_06.png');
- 
-} 
-.bgNosotros {
-  background-image: url('/img/gif/gifNosotros.gif');
- 
 }
-.bgMovil {
-  background-image: url('/img/gif/movil.gif');
- 
-}  
-.bgFooter {
-  background-image: url('/img/gif/footer.gif');
- 
-}  
+
 
 /*Spinner*/
 .lds-facebook {

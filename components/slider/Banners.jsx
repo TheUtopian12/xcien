@@ -1,12 +1,11 @@
 import { useState } from "react";
 import Slider from "react-slick";
-
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import Image from "next/image";
 import Card from "./Card";
 import ReactCardCarousel from "react-card-carousel";
 import CardVertical from "./CardVertical";
-
+import { Parallax } from "react-parallax";
 function Banners() {
   const NextArrow = ({ onClick }) => {
     return (
@@ -39,23 +38,18 @@ function Banners() {
   };
 
   return (
-    <div className="bg-gradient-to-t from-black to-transparent h-[350px] sm:h-[300px] md:h-[500px] lg:h-screen pb-10 mb-10">
-      <video
-        src="https://res.cloudinary.com/dtdxwe8yz/video/upload/v1662736548/VideosXcien/BG_Web_xcien_qqdfem.mp4"
-        autoPlay
-        loop
-        muted
-        className="bg-cover w-full hidden sm:grid"
-      />
+    <Parallax Parallax bgImage="/img/BG_Flat.png" bgImageAlt="the cat" strength={100}
+    >
+      <div className="bg-cover h-[60vh]">
+        <div className="hidden sm:flex relative ">
+          <Card />
+        </div>
 
-      <div className="hidden sm:flex relative sm:top-[-300px]  md:top-[-350px] lg:top-[-400px] xl:top-[-500px] 2xl:top-[-800px]">
-        <Card />
+        <div className="grid sm:hidden relative bg-cover bgImage2 ">
+          <CardVertical />
+        </div>
       </div>
-
-      <div className="grid sm:hidden relative bg-cover bgImage2 ">
-        <CardVertical />
-      </div>
-    </div>
+    </Parallax>
   );
 }
 

@@ -23,8 +23,26 @@ export default class Card extends Component {
     return (
       <div style={Card.CONTAINER_STYLE} className="flex">
         <div>
-          <button onClick={() => this.Carousel.prev()} className="text-white pl-12">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"  stroke="#2adc2f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-left-circle hover:stroke-green-300"><circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line></svg>
+          <button
+            onClick={() => this.Carousel.prev()}
+            className="text-white pl-12 pt-36"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#2adc2f"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-arrow-left-circle hover:stroke-green-300"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 8 8 12 12 16"></polyline>
+              <line x1="16" y1="12" x2="8" y2="12"></line>
+            </svg>
           </button>
         </div>
 
@@ -59,8 +77,26 @@ export default class Card extends Component {
           </div>
         </ReactCardCarousel>
         <div>
-          <button onClick={() => this.Carousel.next()} className="text-white pr-12">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#2adc2f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-right-circle hover:stroke-green-300"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          <button
+            onClick={() => this.Carousel.next()}
+            className="text-white pr-12 pt-36"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#2adc2f"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="feather feather-arrow-right-circle hover:stroke-green-300"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 16 16 12 12 8"></polyline>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
           </button>
         </div>
       </div>
