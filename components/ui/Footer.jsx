@@ -65,8 +65,8 @@ const Footer = () => {
         </div>
         <div>
           <a href="">
-            <h1 className="flex text-white xl:justify-end justify-center 2xl:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0 xl:translate-y-14 xl:-translate-x-52
-            2xl:translate-y-8 2xl:-translate-x-0 
+            <h1 className="flex text-white xl:justify-end justify-center sm:gap-24 gap-10 pt-7 sm:pt0 xl:translate-y-14 xl:-translate-x-[480px]
+            2xl:translate-y-8 2xl:-translate-x-[900px] 
             
             ">
               Aviso de Privacidad | Cumplimiento IFT y PROFECO
@@ -74,8 +74,8 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex text-white xl:justify-end justify-center 2xl:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0 xl:translate-y-16
-        2xl:translate-y-10
+        <div className="flex text-white xl:justify-end justify-center 2xl:pr-72 sm:gap-24 gap-10 pt-7 sm:pt0 xl:translate-y-1
+        2xl:translate-y-[-24px]
         ">
           <div className="flex items-center gap-2">
             <Image src={Facebook} width={20} height={20} />

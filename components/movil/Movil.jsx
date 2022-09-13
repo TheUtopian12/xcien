@@ -13,7 +13,7 @@ const Movil = () => {
 
     <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500}>
     
-    <div className="w-full pt-36 xl:pt-0  2xl:pt-0 xl:h-[50vh] xl:pb-0  2xl:h-[50vh] h-full  md:-translate-y-[00px]">
+    <div className="w-full pt-36 xl:pt-0  2xl:pt-0 xl:h-[60vh] xl:pb-0  2xl:h-[50vh] h-full  md:-translate-y-[00px]">
       <div className="grid sm:grid-cols-3 ">
         <div className="flex items-center justify-center pt-10">
           <div className="w-[200px] sm:w-[400px] ">
