@@ -6,7 +6,7 @@ const Nosotros = () => {
   return (
     <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500} bgImageStyle={{
       
-      objectFit: 'cover', objectPosition: '15% 100%'
+      objectFit: 'cover', 
     }}>
       <div className="2xl:h-[100vh] 2xl:pt-36 xl:h-[110vh] xl:pt-24">
         <h1 className="text-5xl font-bold text-[#2adc2f] text-center mb-10">
