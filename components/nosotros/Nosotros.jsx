@@ -4,7 +4,10 @@ import Gent from "../../public/img/Back-Nosotros.png";
 import { Parallax } from "react-parallax";
 const Nosotros = () => {
   return (
-    <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500}>
+    <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500} bgImageStyle={{
+      
+      objectFit: 'cover',
+    }}>
       <div className="2xl:h-[100vh] 2xl:pt-36 xl:h-[110vh] xl:pt-24">
         <h1 className="text-5xl font-bold text-[#2adc2f] text-center mb-10">
           Nosotros

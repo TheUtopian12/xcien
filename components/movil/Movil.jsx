@@ -11,7 +11,10 @@ import { Parallax } from "react-parallax";
 const Movil = () => {
   return (
 
-    <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500}>
+    <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500} bgImageStyle={{
+      
+      objectFit: 'cover',
+    }}>
     
     <div className="w-full pt-36 xl:pt-0  2xl:pt-0 xl:h-[60vh] xl:pb-0  2xl:h-[50vh] h-full  md:-translate-y-[00px]">
       <div className="grid sm:grid-cols-3 ">

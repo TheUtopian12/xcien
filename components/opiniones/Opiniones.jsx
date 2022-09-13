@@ -34,7 +34,10 @@ const settings3 = {
 const Opiniones = () => {
   return (
     <div className="sm:h-full  h-full  pb-0">
-      <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={200}>
+      <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={200} bgImageStyle={{
+      
+      objectFit: 'cover',
+    }}>
         <div className="relative ">
           {" "}
           <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-2 pb-2 bgImageF bg-cover  mb-10">

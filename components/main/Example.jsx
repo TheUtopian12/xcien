@@ -7,11 +7,12 @@ import bg3 from "../../public/img/Antenna.png";
 import { Parallax } from "react-parallax";
 const Example = () => {
   return (
-    <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500}>
+    <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500} bgImageStyle={{
+      
+      objectFit: 'cover',
+    }}>
       {" "}
       <div id="inicio" className="flex h-screen">
-        
-
         <ParallaxProvider>
           <ParallaxBanner
             layers={[
@@ -37,7 +38,7 @@ const Example = () => {
                   "
                   >
                     <img src="/img/City.png" alt="City" />
-                    
+
                     <div
                       className="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-black/80 z-[2] 
                       lg:w-[1370px]
@@ -73,7 +74,6 @@ const Example = () => {
                       
                       "
                     />
-                    
                   </div>
                 ),
               },
@@ -89,7 +89,6 @@ const Example = () => {
                    2xl:w-[520px]
                    "
                   >
-                    
                     <div>
                       <p
                         className="text-white text-center text-xl 
@@ -137,7 +136,6 @@ const Example = () => {
                         México
                       </h1>
                     </div>
-                    
                   </div>
                 ),
               },
