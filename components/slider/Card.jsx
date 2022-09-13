@@ -25,19 +25,18 @@ export default class Card extends Component {
         <div>
           <button
             onClick={() => this.Carousel.prev()}
-            className="text-white pl-12 xl:translate-y-[-100px] 2xl:translate-y-0"
+            className="text-white pl-12 sm:translate-y-[-80px] xl:translate-y-[-100px] 2xl:translate-y-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
+              
               viewBox="0 0 24 24"
               fill="none"
               stroke="#2adc2f"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="feather feather-arrow-left-circle hover:stroke-green-300"
+              className="feather feather-arrow-left-circle hover:stroke-green-300 2xl:w-10 2xl:h-10 sm:w-4 sm:h-4"
             >
               <circle cx="12" cy="12" r="10"></circle>
               <polyline points="12 8 8 12 12 16"></polyline>
@@ -79,7 +78,7 @@ export default class Card extends Component {
         <div>
           <button
             onClick={() => this.Carousel.next()}
-            className="text-white pr-12 xl:translate-y-[-100px] 2xl:translate-y-0"
+            className="text-white pr-12 sm:translate-y-[-80px] xl:translate-y-[-100px] 2xl:translate-y-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +90,7 @@ export default class Card extends Component {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="feather feather-arrow-right-circle hover:stroke-green-300"
+              className="feather feather-arrow-right-circle hover:stroke-green-300 2xl:w-10 2xl:h-10 sm:w-4 sm:h-4"
             >
               <circle cx="12" cy="12" r="10"></circle>
               <polyline points="12 16 16 12 12 8"></polyline>

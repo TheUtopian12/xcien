@@ -35,7 +35,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-10 ease-in duration-700 h-[110px]"
     >
-      <div className="max-w-screen m-auto flex justify-between items-center p-0 sm:mt-[-30px] text-white sm:pl-16 sm:pr-0">
+      <div className="max-w-screen m-auto flex justify-between items-center p-0 sm:mt-[30px] text-white sm:pl-0 sm:pr-0 lg:mt-[-20px] lg:pl-10">
         <Link href="/" style={{ color: `${textColor}` }}>
           <img src={url} style={{ width: ancho }} />
         </Link>

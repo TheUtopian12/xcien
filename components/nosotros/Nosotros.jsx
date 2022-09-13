@@ -12,8 +12,8 @@ const Nosotros = () => {
         <h1 className="text-5xl font-bold text-[#2adc2f] text-center mb-10">
           Nosotros
         </h1>
-        <div className="sm:flex gap-10 pb-10 ">
-          <div className="m-2 sm:w-[50%]  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50 border border-gray-900 rounded-2xl pt-10 pb-10 pl-10 pr-10">
+        <div className="lg:flex gap-10 pb-10 ">
+          <div className="m-2 lg:w-[50%] xl:w-[50%]  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50 border border-gray-900 rounded-2xl pt-10 pb-10 pl-10 pr-10">
             {" "}
             <div className=" rounded-3xl text-white grid justify-center items-center text-lg pt-0">
               <p className="pt-2 mr-6 ml-6">
@@ -49,10 +49,10 @@ const Nosotros = () => {
             </div>
           </div>
 
-          <div className=" md:w-[80vh] pt-5 sm:pt-0">
+          <div className=" md:w-[80vh] lg:w-[50%] pt-5 sm:pt-0 md:pl-52 lg:pl-0 lg:pt-52 xl:pt-10" >
             <Image
               src={Gent}
-              className="2xl:rounded-tl-[300px] 2xl:rounded-br-[300px] rounded-tl-[100px] rounded-br-[100px] xl:rounded-tl-[150px] xl:rounded-br-[150px]"
+              className=" 2xl:rounded-tl-[300px] 2xl:rounded-br-[300px] rounded-tl-[100px] rounded-br-[100px] xl:rounded-tl-[150px] xl:rounded-br-[150px]"
             />
           </div>
         </div>

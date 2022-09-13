@@ -28,9 +28,9 @@ const Example = () => {
                     className="absolute inset-0 flex items-center justify-center w-[800px] h-[500px] translate-y-[550px] -translate-x-24 
                     sm:w-[1000px] 
                     md:w-[1200px]
-                    md:translate-y-[800px]
+                    md:translate-y-[600px]
                     lg:w-[1370px]
-                    lg:translate-y-[720px]
+                    lg:translate-y-[520px]
                     2xl:w-[1800px]
                     2xl:h-[600px]
                     2xl:translate-y-[400px]

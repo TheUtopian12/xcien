@@ -12,7 +12,7 @@ const Movil = () => {
   return (
 
     <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500} bgImageStyle={{
-      
+     
       objectFit: 'cover', 
     }}>
     

@@ -13,15 +13,15 @@ export default function Home() {
   return (
     <>
 
-    {/**  */}
-      <Example />
-      <Banners />
-      <Servicios />
-      <Ventajas />
-      <Nosotros /> 
-      <Opiniones />
-      <Movil />
+    {/** 
+      
      
+     
+      
+      */}
+      <Example />
+     <Banners />
+     <Servicios /> <Ventajas /> <Nosotros /> <Opiniones /> <Movil />
     </>
   );
 }
