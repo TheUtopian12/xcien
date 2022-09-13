@@ -17,6 +17,11 @@ html {
   
  
 } 
+.bgImageF {
+  background-image: url('/img/BG_Flat.png');
+  
+ 
+} 
 
 .bgFooter{
   background-image: url('/img/backs/BG_08.png');

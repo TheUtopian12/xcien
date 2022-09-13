@@ -5,8 +5,6 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import bg3 from "../../public/img/Antenna.png";
 
 import { Parallax } from "react-parallax";
-
-import Hero from "./Hero";
 const Example = () => {
   return (
     <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500}>

@@ -33,25 +33,26 @@ const settings3 = {
 };
 const Opiniones = () => {
   return (
-    <div className="bg-cover  sm:h-full  h-full  pb-0">
-      <Parallax bgImage="/img/BG_Flat.png" bgImageAlt="the cat" strength={200}>
+    <div className="sm:h-full  h-full  pb-0">
+      <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={200}>
         <div className="relative ">
           {" "}
-          <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-10 pb-12">
+          <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-10 pb-12 bgImageF bg-cover  mb-10">
             <h1>Certificaciones</h1>
             <div className="pt-10 flex items-center">
               {" "}
               <Empresas1 />
             </div>
           </div>
-          <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-28 pb-24">
+          <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-28 pb-24 bgImageF  bg-cover mt-10 mb-10">
             <h1>Alianzas comerciales</h1>
             <div className="pt-10 flex items-center">
               {" "}
               <Empresas2 />
             </div>
           </div>
-          <h1 className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl mb-10 pt-10">
+
+          <div className="bg-cover mt-10  pb-10 bgImageF"> <h1 className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl mb-10 pt-10 ">
             Casos de éxito
           </h1>
           <div className="flex justify-center">
@@ -544,7 +545,8 @@ const Opiniones = () => {
                 </div>
               </div>{" "}
             </Slider>
-          </div>
+          </div></div>
+         
         </div>
       </Parallax>
     </div>

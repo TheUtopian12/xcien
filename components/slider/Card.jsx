@@ -25,7 +25,7 @@ export default class Card extends Component {
         <div>
           <button
             onClick={() => this.Carousel.prev()}
-            className="text-white pl-12 pt-36"
+            className="text-white pl-12 xl:translate-y-[-100px] 2xl:translate-y-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ export default class Card extends Component {
         <div>
           <button
             onClick={() => this.Carousel.next()}
-            className="text-white pr-12 pt-36"
+            className="text-white pr-12 xl:translate-y-[-100px] 2xl:translate-y-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

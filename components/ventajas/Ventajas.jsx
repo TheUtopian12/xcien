@@ -43,7 +43,7 @@ const Ventajas = () => {
     
     <Parallax bgImage="/img/BG_Flat.png" bgImageAlt="the cat" strength={100}>
     
-     <section className="pt-10 pb-10 text-center">
+     <section className="pt-10 2xl:pt-40 xl:pt-32 pb-10 text-center h-[100vh]">
           <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f] pb-10">
             Ventajas
           </h1>

@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <section className=" translate-y-1">
      
-      <footer className="p-4 shadow md:px-6 md:py-8  xl:h-[50vh] h-[90%]  bgFooter bg-cover">
+      <footer className="p-4 shadow md:px-6 md:py-8 xl:h-[60vh] 2xl:h-[50vh] h-[90%]  bgFooter bg-contain sm:bg-cover bg-no-repeat bg-bottom">
         <div />
 
         <div className="grid 2xl:grid-cols-5 sm:grid-cols-2 xl:grid-cols-5 ">
