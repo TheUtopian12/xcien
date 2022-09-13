@@ -44,7 +44,7 @@ function Banners() {
       bgImageAlt="the cat"
       strength={100}
     >
-      <div className="bg-cover sm:h-[60vh] md:h-[50vh]  2xl:h-[100vh]">
+      <div className="bg-cover sm:h-[60vh] md:h-[50vh] xl:h-[60vh]  2xl:h-[100vh]">
         <div className="hidden sm:flex relative sm:top-28 xl:top-28 2xl:top-64 ">
           <Card />
         </div>
