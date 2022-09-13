@@ -13,11 +13,11 @@ const Movil = () => {
 
     <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500}>
     
-    <div className="w-full pt-36 xl:pt-0  2xl:pt-0 xl:h-[100vh] xl:pb-0  2xl:h-[70vh] h-full  md:-translate-y-[00px]">
+    <div className="w-full pt-36 xl:pt-0  2xl:pt-0 xl:h-[50vh] xl:pb-0  2xl:h-[50vh] h-full  md:-translate-y-[00px]">
       <div className="grid sm:grid-cols-3 ">
         <div className="flex items-center justify-center pt-10">
           <div className="w-[200px] sm:w-[400px] ">
-            <img src="/img/iPhoneb 14.png" width={290} height={290} />
+            <img src="/img/iphone.png" width={290} height={290} />
           </div>
         </div>
         <div className="sm:col-span-2 pt-10">

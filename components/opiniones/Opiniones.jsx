@@ -37,14 +37,14 @@ const Opiniones = () => {
       <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={200}>
         <div className="relative ">
           {" "}
-          <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-10 pb-12 bgImageF bg-cover  mb-10">
+          <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-2 pb-2 bgImageF bg-cover  mb-10">
             <h1>Certificaciones</h1>
             <div className="pt-10 flex items-center">
               {" "}
               <Empresas1 />
             </div>
           </div>
-          <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-28 pb-24 bgImageF  bg-cover mt-10 mb-10">
+          <div className="flex flex-col items-center text-[#2adc2f] font-bold text-3xl sm:4xl pt-8 pb-8 bgImageF  bg-cover mt-10 mb-10">
             <h1>Alianzas comerciales</h1>
             <div className="pt-10 flex items-center">
               {" "}

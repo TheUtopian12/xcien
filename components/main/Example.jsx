@@ -84,7 +84,7 @@ const Example = () => {
                     className="flex flex-col mt-[150px] ml-3 mr-3 pt-10
                    md:ml-9 md:mr-9
                    lg:ml-10 lg:mr-10
-                   2xl:translate-x-[1080px]
+                   2xl:translate-x-[1000px]
                    2xl:translate-y-[210px]
                    2xl:w-[520px]
                    "
@@ -97,6 +97,7 @@ const Example = () => {
                       lg:text-3xl
                       2xl:text-left
                       2xl:text-2xl
+                      
                       "
                       >
                         Somos expertos en conectividad e integración de
