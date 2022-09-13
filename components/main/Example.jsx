@@ -10,6 +10,7 @@ const Example = () => {
     <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500} bgImageStyle={{
       
       objectFit: 'cover',
+      objectPosition: '15% 100%'
     }}>
       {" "}
       <div id="inicio" className="flex h-screen">

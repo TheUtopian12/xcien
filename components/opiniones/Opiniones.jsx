@@ -37,6 +37,7 @@ const Opiniones = () => {
       <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={200} bgImageStyle={{
       
       objectFit: 'cover',
+      objectPosition: '15% 100%'
     }}>
         <div className="relative ">
           {" "}

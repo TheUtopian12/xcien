@@ -16,7 +16,7 @@ const Servicios = () => {
   return (
     <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={700}  bgImageStyle={{
       
-      objectFit: 'cover',
+      objectFit: 'cover', objectPosition: '15% 100%'
     }}>
       <div className="sm:h-screen xl:h-[160vh] pt-28 2xl:h-[130vh] ">
       <div className="grid grid-cols-1 justify-center text-center">
