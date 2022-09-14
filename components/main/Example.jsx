@@ -7,10 +7,14 @@ import bg3 from "../../public/img/Antenna.png";
 import { Parallax } from "react-parallax";
 const Example = () => {
   return (
-    <Parallax bgImage="/img/BG_S04.png" bgImageAlt="the cat" strength={500} bgImageStyle={{
-      
-      objectFit: 'cover',
-    }}>
+    <Parallax
+      bgImage="/img/BG_S04.png"
+      bgImageAlt="the cat"
+      strength={500}
+      bgImageStyle={{
+        objectFit: "cover",
+      }}
+    >
       {" "}
       <div id="inicio" className="flex h-screen">
         <ParallaxProvider>
