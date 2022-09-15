@@ -29,7 +29,6 @@ export default class Card extends Component {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              
               viewBox="0 0 24 24"
               fill="none"
               stroke="#2adc2f"
@@ -46,28 +45,28 @@ export default class Card extends Component {
         </div>
 
         <ReactCardCarousel ref={(Carousel) => (this.Carousel = Carousel)}>
-          <div className="2xl:w-[1000px] 2xl:h-[300px] rounded-lg ">
+          <div className="3xl:w-[1000px] 2xl:w-[900px] 2xl:h-[300px] rounded-lg ">
             {" "}
             <img
               src="/img/Banners/SitioWeb_PromoAgo_xcien.png"
               className="rounded-lg sm:rounded-3xl"
             />{" "}
           </div>
-          <div className="2xl:w-[1000px] 2xl:h-[300px]  rounded-lg ">
+          <div className="3xl:w-[1000px] 2xl:w-[900px] 2xl:h-[300px]  rounded-lg ">
             {" "}
             <img
               src="/img/Banners/Banner-IPv6-XCIEN.png"
               className="rounded-lg sm:rounded-3xl"
             />{" "}
           </div>
-          <div className="2xl:w-[1000px] 2xl:h-[300px]  rounded-lg">
+          <div className="3xl:w-[1000px] 2xl:w-[900px] 2xl:h-[300px]  rounded-lg">
             {" "}
             <img
               src="/img/Banners/banner-tanarah-xcien.png"
               className="rounded-lg sm:rounded-3xl"
             />{" "}
           </div>
-          <div className="2xl:w-[1000px] 2xl:h-[300px]  rounded-lg">
+          <div className="3xl:w-[1000px] 2xl:w-[900px] 2xl:h-[300px]  rounded-lg">
             {" "}
             <img
               src="/img/Banners/SDWAN-JUL-XCIEN.png"
