@@ -36,13 +36,13 @@ const Example = () => {
                     lg:w-[1370px]
                     lg:translate-y-[520px]
                     xl:translate-y-[420px]
-                    2xl:w-[1800px]
+                    2xl:w-[1200px]
                     2xl:h-[600px]
-                    2xl:translate-y-[400px]
-                    2xl:translate-x-[0px]
+                    2xl:translate-y-[600px]
+                    2xl:translate-x-[-200px]
                   "
                   >
-                    <img src="/img/City.png" alt="City" />
+                    <img src="/img/City-Mirror.png" alt="City" />
 
                     <div
                       className="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-black/80 z-[2] 
@@ -135,7 +135,7 @@ const Example = () => {
                       </button>
                     </div>
 
-                    <div className="mt-[110px] md:mt-[100px] lg:mt-[240px] xl:mt-[80px] 2xl:mt-[240px]  xl:translate-y-[90px] 2xl:-translate-y-[130px] 2xl:w-[1200px] 2xl:-translate-x-[770px] ">
+                    <div className="mt-[110px] md:mt-[100px] lg:mt-[240px] xl:mt-[80px] 2xl:mt-[240px]  xl:translate-y-[90px] 2xl:-translate-y-[160px] 2xl:w-[1200px] 2xl:-translate-x-[770px] ">
                       <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-r from-cyan-400 via-green-500 to-green-400 text-center ">
                         Somos el operador inalámbrico empresarial más grande de
                         México
