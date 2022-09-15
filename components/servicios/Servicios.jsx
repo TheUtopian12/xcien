@@ -35,7 +35,7 @@ const Servicios = () => {
           </h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-9 w-full mt-20 md:mb-10 xl:pl-10 xl:pr-10 transition ease-in-out ">
-          <div className={`flex justify-center 2xl:translate-x-48`}>
+          <div className={`flex justify-center 2xl:translate-x-38 3xl:translate-x-48`}>
             <Card
               titulo={"Internet"}
               imagen={internet}
@@ -68,7 +68,7 @@ const Servicios = () => {
             />
           </div>
 
-          <div className="flex justify-center 2xl:-translate-x-48">
+          <div className="flex justify-center 2xl:-translate-x-38 3xl:-translate-x-48">
             <Card
               titulo={"Telefonía IP"}
               imagen={ip}
@@ -84,7 +84,7 @@ const Servicios = () => {
               }
             />
           </div>
-          <div className="flex justify-center 2xl:translate-x-48">
+          <div className="flex justify-center 2xl:translate-x-38 3xl:translate-x-48">
             <Card
               titulo={"CIBERSEGURIDAD"}
               imagen={ciber}
@@ -115,7 +115,7 @@ const Servicios = () => {
               }
             />
           </div>
-          <div className="flex justify-center 2xl:-translate-x-48">
+          <div className="flex justify-center 2xl:-translate-x-38 3xl:-translate-x-48">
             <Card
               titulo={"Data Center"}
               imagen={bigdata}
