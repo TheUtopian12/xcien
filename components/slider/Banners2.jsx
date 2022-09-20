@@ -1,42 +1,23 @@
 import React from 'react'
-import Slider from "react-slick";
+
 const Banners2 = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    speed: 500
-  };
   return (
-    <div>
-
-<div>
-        <h2>Center Mode</h2>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-      </div>
-
-    </div>
+    <div className="carousel carousel-center max-w-md p-4 space-x-4 bgImage2 ">
+  <div className="carousel-item">
+    <img src="/img/Banners/SitioWeb_PromoAgo_xcien.png" className="rounded-box w-80 h-56"/>
+  </div> 
+ 
+  <div className="carousel-item">
+    <img src="/img/Banners/Banner-IPv6-XCIEN.png" className="rounded-box w-80 h-56"/>
+  </div> 
+  <div className="carousel-item">
+    <img src="/img/Banners/banner-tanarah-xcien.png" className="rounded-box w-80 h-56"/>
+  </div> 
+  <div className="carousel-item">
+    <img src="/img/Banners/SDWAN-JUL-XCIEN.png" className="rounded-box w-80 h-56"/>
+  </div> 
+ 
+</div>
   )
 }
 

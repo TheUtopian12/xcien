@@ -49,6 +49,7 @@ const Servicios = () => {
                   para la base de la transformación de tu empresa
                 </>
               }
+              pagina={"/ServiciosInternet"}
             />
           </div>
 

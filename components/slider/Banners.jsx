@@ -6,6 +6,7 @@ import Card from "./Card";
 import ReactCardCarousel from "react-card-carousel";
 import CardVertical from "./CardVertical";
 import { Parallax } from "react-parallax";
+import Banners2 from "./Banners2";
 function Banners() {
   const NextArrow = ({ onClick }) => {
     return (
@@ -50,7 +51,7 @@ function Banners() {
         </div>
 
         <div className="grid sm:hidden relative bg-cover bgImage2 ">
-          <CardVertical />
+          <Banners2/>
         </div>
       </div>
     </Parallax>

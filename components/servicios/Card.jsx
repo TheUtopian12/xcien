@@ -1,8 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useEffect } from "react";
 import Image from "next/image";
-const Card = ({ titulo, imagen, descripcion, arrow, filtro }) => {
+import Link from "next/link";
+const Card = ({ titulo, imagen, descripcion, arrow, pagina }) => {
+  var direccion
+useEffect(() => {
+  direccion = pagina
+}, []);
+
+  console.log(pagina)
   return (
-    <div className='flex justify-center group'>
+    <div className="flex justify-center group">
       <div
         className={` border-solid  bg-[#050c13] group-hover:bg-white h-[350px]  sm:w-[90%] md:w-[98%] 2xl:w-[400px] w-[80%] rounded-2xl shadow-lg  text-white group-hover:text-black`}
       >
@@ -11,7 +18,7 @@ const Card = ({ titulo, imagen, descripcion, arrow, filtro }) => {
             src={imagen}
             width={50}
             height={50}
-            className='group-hover:brightness-0 group-hover:invert'
+            className="group-hover:brightness-0 group-hover:invert"
           />
         </div>
 
@@ -21,9 +28,8 @@ const Card = ({ titulo, imagen, descripcion, arrow, filtro }) => {
           </h1>
           <p className="pt-5 pl-5 text-md">{descripcion}</p>
 
-          <button href="" className="pt-5 pl-5 text-md">
-            Ver más <Image src={arrow} width={12} height={10} />{" "}
-          </button>
+         
+          
         </div>
       </div>
     </div>
