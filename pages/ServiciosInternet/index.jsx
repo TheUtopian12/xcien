@@ -6,7 +6,7 @@ import {
 } from "react-icons/md";
 import Aos from "aos";
 import "aos/dist/aos.css";
-const index = () => {
+const ServiciosInternet = () => {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
@@ -158,4 +158,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default ServiciosInternet;
