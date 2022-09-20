@@ -27,6 +27,11 @@ html {
   background-image: url('/img/backs/BG_08.png');
 }
 
+.bgInternet{
+  background-image: url('/img/antenas-telefonia-telecomunicaciones (1).jpg');
+}
+
+
 
 /*Spinner*/
 .lds-facebook {

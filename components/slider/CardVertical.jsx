@@ -11,7 +11,7 @@ export default class CardVertical extends Component {
       paddingTop: "180px",
       flex: 1,
       justifyContent: "center",
-      alignItems: "middle",
+      alignItems: "flex-start",
     };
   }
 
@@ -25,32 +25,12 @@ export default class CardVertical extends Component {
         {" "}
         <div className="flex pl-[45%]">
           {" "}
-          <button
-            onClick={() => this.Carousel.next()}
-            className="text-white mt-1 mb-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#2adc2f"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="feather feather-arrow-up-circle hover:stroke-green-300"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="16 12 12 8 8 12"></polyline>
-              <line x1="12" y1="16" x2="12" y2="8"></line>
-            </svg>
-          </button>
+        
         </div>
         <div style={CardVertical.CONTAINER_STYLE}>
           <ReactCardCarousel
             ref={(Carousel) => (this.Carousel = Carousel)}
-            alignment="vertical"
+            alignment="horizontal"
           >
             <div className="w-[300px] 2xl:h-[400px] rounded-lg ">
               {" "}
@@ -84,27 +64,7 @@ export default class CardVertical extends Component {
         </div>
         <div className="flex pl-[45%]">
           {" "}
-          <button
-            onClick={() => this.Carousel.next()}
-            className="text-white mt-2 mb-1"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#2adc2f"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="feather feather-arrow-down-circle hover:stroke-green-300"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="8 12 12 16 16 12"></polyline>
-              <line x1="12" y1="8" x2="12" y2="16"></line>
-            </svg>
-          </button>
+          
         </div>
       </div>
     );
