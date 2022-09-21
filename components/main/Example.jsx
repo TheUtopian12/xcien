@@ -76,8 +76,8 @@ const Example = () => {
                                 lg:h-[710px]"
                     />
                     <div
-                      className="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-black/80 z-[2] lg:w-[1370px] 
-                      2xl:w-[1900px]
+                      className="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-black/70 z-[2] lg:w-screen
+                      2xl:w-screen
                       
                       "
                     />
