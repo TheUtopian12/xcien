@@ -6,6 +6,7 @@ import {
 } from "react-icons/md";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Parallax } from "react-parallax";
 const ServiciosInternet = () => {
   useEffect(() => {
     Aos.init({ duration: 3000 });
@@ -13,14 +14,25 @@ const ServiciosInternet = () => {
 
   return (
     <>
+   
       <div className="h-full pb-10 bg-slate-500">
-        <div className="bg-slate-700 bg-cover h-[400px] flex flex-col items-center justify-center">
+      <Parallax
+      bgImage="/img/BG_S04.png"
+      bgImageAlt="the cat"
+      strength={-1700}
+      bgImageStyle={{
+        objectFit: "cover",
+      }}
+    >
+        <div className="bgWave bg-cover h-[800px] flex flex-col items-center justify-center">
           <h1 className="text-white font-bold text-3xl uppercase">Internet</h1>
           <h2 className="text-white font-bold text-2xl">
             Encuentra la mejor opción de Internet para negocio, empresa y
             Gobierno
           </h2>
         </div>
+       
+
 
         <div className="flex justify-center -translate-y-10 ">
           <div
@@ -87,45 +99,31 @@ const ServiciosInternet = () => {
 
           <div className="flex pt-10 justify-center items-center">
             <div className="flex justify-center gap-40 text-white">
-              <div className="w-[400px] h-[200px]" data-aos="fade-right">
-                <p className="text-justify text-xl">
-                  Estabilidad Garantiza estabilidad en la transferencia de
-                  datos, servicio de Internet hasta 1 Gb.
-                </p>
-              </div>
               <div
-                className="w-[400px] border-2 text-xl flex justify-center items-center text-center bg-purple-600"
-                data-aos="fade-left"
+                className="w-[400px] h-[200px] border-2 text-xl flex justify-center items-center text-center bg-purple-600"
+                data-aos="fade-right"
               >
                 <p>INTERNET DEDICADO</p>
               </div>
+              <div
+                className="w-[400px] h-[200px] border-2 text-xl flex justify-center items-center text-center bg-purple-600"
+                data-aos="fade-left"
+              >
+                <p>INTERNET PARA EVENTOS</p>
+              </div>
             </div>
           </div>
+          <div className="flex pt-10 justify-center items-center">
+            <div className="flex justify-center gap-40 text-white"></div>
+          </div>
+
           <div className="flex pt-10 justify-center items-center">
             <div className="flex justify-center gap-40 text-white">
               <div
                 className="w-[400px] h-[200px] border-2 text-xl flex justify-center items-center text-center bg-purple-600"
                 data-aos="fade-right"
               >
-                <p>INTERNET PARA EVENTOS</p>
-              </div>
-              <div className="w-[400px] " data-aos="fade-left">
-                <p className="text-justify text-xl">
-                  Seguridad y Productividad Mayor rendimiento del equipo de
-                  trabajo con un internet seguro (internet+firewall).
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex pt-10 justify-center items-center">
-            <div className="flex justify-center gap-40 text-white">
-              <div className="w-[400px] h-[200px] " data-aos="fade-right">
-                <p className="text-justify text-xl">
-                  End to end Despreocúpate, nos encargamos de todo. Complementa
-                  tu servicio con nuestras soluciones (wifi, firewall,
-                  orquestador de redes, G suite, telefonía , entre otros).
-                </p>
+                <p>INTERNET RESIDENCIAL PLUS</p>
               </div>
               <div
                 className="w-[400px] border-2 text-xl flex justify-center items-center text-center bg-purple-600"
@@ -137,22 +135,10 @@ const ServiciosInternet = () => {
           </div>
 
           <div className="flex pt-10 justify-center items-center">
-            <div className="flex justify-center gap-40 text-white">
-              <div
-                className="w-[400px] h-[200px] border-2 text-xl flex justify-center items-center text-center bg-purple-600"
-                data-aos="fade-right"
-              >
-                <p>INTERNET RESIDENCIAL PLUS</p>
-              </div>
-              <div className="w-[400px] " data-aos="fade-left">
-                <p className="text-justify text-xl">
-                  Alta disponibilidad Internet sin caídas, aseguramos la
-                  continuidad de tú negocio.
-                </p>
-              </div>
-            </div>
+            <div className="flex justify-center gap-40 text-white"></div>
           </div>
         </div>
+        </Parallax>
       </div>
     </>
   );
