@@ -9,7 +9,7 @@ import Link from "next/link";
 import { FiMapPin } from "react-icons/fi";
 const Footer = () => {
   return (
-    <section className=" translate-y-1">
+    <section className=" translate-y-0">
      
       <footer className="p-4 shadow md:px-6 md:py-8 xl:h-[40vh] 2xl:h-[35vh] h-[90%]  bgFooter bg-contain sm:bg-cover bg-no-repeat bg-bottom">
         <div />
