@@ -17,17 +17,20 @@ const Movil = () => {
     }}>
     
     <div className="w-full pt-36 xl:pt-0  2xl:pt-0 xl:h-[60vh] xl:pb-0  2xl:h-[50vh] h-full  md:-translate-y-[00px]">
+   
+    <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-b from-green-500 via-blue-500 to-green-500 text-center pt-10">
+              <span className="text-white">Descarga nuestra</span> xcienApp
+            </h1>
       <div className="grid sm:grid-cols-3 ">
         <div className="flex items-center justify-center pt-10">
           <div className="w-[200px] sm:w-[400px] ">
             <img src="/img/telefon.png" width={290} height={290} />
           </div>
         </div>
+        
         <div className="sm:col-span-2 pt-10">
           <div className="text-center">
-            <h1 className="font-extrabold text-transparent text-2xl 2xl:text-3xl  bg-clip-text bg-gradient-to-b from-green-500 via-green-500 to-blue-500 text-center ">
-              <span className="text-white">Descarga nuestra</span> xcienApp
-            </h1>
+            
             <h1 className="sm:text-4xl text-xl font-bold text-[#2adc2f] "></h1>
           </div>
           <div className="xl:flex sm:justify-between m-12 md:text-center text-white font-semibold grid grid-cols-1 lg:grid-cols-2 text-center">
