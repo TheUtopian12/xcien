@@ -26,11 +26,16 @@ useEffect(() => {
           <h1 className="pt-5 pl-5  font-semibold sm:text-2xl text-xl uppercase ">
             {titulo}
           </h1>
-          <p className="pt-5 pl-5 text-md">{descripcion}</p>
+          <p className="pt-5 pl-5 text-md h-[100px]">{descripcion}</p>
 
-         
+          
           
         </div>
+
+        <div className="pt-10 pl-5"><p className="text-white group-hover:text-green-500">
+          <Link href={pagina}> Ver mas</Link>
+         </p></div>
+        
       </div>
     </div>
   );

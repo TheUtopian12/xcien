@@ -66,6 +66,7 @@ const Servicios = () => {
                   tu red de manera más inteligente.
                 </>
               }
+              pagina={"/SDWAN"}
             />
           </div>
 
@@ -83,6 +84,7 @@ const Servicios = () => {
                   desde la oficina, de forma remota o móvil.
                 </>
               }
+              pagina={"/TelefoniaIp"}
             />
           </div>
           <div className="flex justify-center 2xl:translate-x-38 3xl:translate-x-48">
@@ -97,6 +99,7 @@ const Servicios = () => {
                   simple.
                 </>
               }
+              pagina={"/Ciberseguridad"}
             />
           </div>
           <div className="flex justify-center ">
@@ -114,6 +117,7 @@ const Servicios = () => {
                   remotas.
                 </>
               }
+              pagina={"/VPN"}
             />
           </div>
           <div className="flex justify-center 2xl:-translate-x-38 3xl:-translate-x-48">
@@ -129,6 +133,7 @@ const Servicios = () => {
                   </span>
                 </>
               }
+              pagina={"/DataCenter"}
             />
           </div>
         </div>
