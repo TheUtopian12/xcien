@@ -9,8 +9,10 @@ const Card = (props) => {
       style={{ backgroundImage: `url(${url})` }}
       onMouseEnter={() => props.onCardClick(id)}
     >
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div style={{ backdropFilter: "blur(2px)", height: "600px" }}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
     </div>
   );
 };

@@ -144,7 +144,6 @@ html {
   margin: 0rem;
   transition: ease-out 1ms;
   filter: brightness(50%);
-  filter: blur(1px);
 }
 
 .card h3 {
