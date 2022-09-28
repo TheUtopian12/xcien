@@ -8,7 +8,7 @@ const index = () => {
           Estamos en búsqueda de los mejores talentos
         </h1>
         <h2 className="text-2xl text-white m-5 font-semibold">
-          Te interesa unirte a nuestro equipo de trabajo
+        ¿Te interesa unirte a nuestro equipo de trabajo?
         </h2>
       </div>
       <div className="flex bg-white w-[600px] h-[700px] -translate-x-20 translate-y-40 rounded-[20px] justify-center shadow-lg">
@@ -60,7 +60,22 @@ const index = () => {
               placeholder=""
             />
           </div>
-
+          <div className="mb-6">
+          <label
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="grid-first-name"
+            >
+              Selecciona tu Ubicacion
+            </label>
+            <select
+              className="block appearance-none w-full bg-white border border-green-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+              id="grid-state"
+            >
+              <option className="">-  -</option>
+              <option>Monterrey</option>
+              <option>Saltillo</option>
+            </select>
+          </div>
 
           <div className="mb-6">
           <label
@@ -78,22 +93,7 @@ const index = () => {
               <option>Asesor Comercial de Negocios</option>
             </select>
           </div>
-          <div className="mb-6">
-          <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-first-name"
-            >
-              Selecciona tu Ubicacion
-            </label>
-            <select
-              className="block appearance-none w-full bg-white border border-green-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-green-500"
-              id="grid-state"
-            >
-              <option className="">-  -</option>
-              <option>Monterrey</option>
-              <option>Saltillo</option>
-            </select>
-          </div>
+         
 
           <div className="mb-4">
             <label
