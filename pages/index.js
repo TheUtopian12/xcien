@@ -1,3 +1,4 @@
+import React,{useState} from "react";
 import Example from "../components/main/Example";
 import Hero from "../components/main/Hero";
 import Welcome from "../components/main/Welcome";
@@ -8,20 +9,20 @@ import Servicios from "../components/servicios/Servicios";
 import Banners from "../components/slider/Banners";
 import Card from "../components/slider/Card";
 import Ventajas from "../components/ventajas/Ventajas";
-import Loading from './Loading'
+
 export default function Home() {
+  const [dark, setDark] = useState('black')
   return (
     <>
 
     {/** 
-      
-     
-     
-      
+            
       */}
+      
+
       <Example />
      <Banners />
-     <Servicios /> <Ventajas /> <Nosotros /> <Opiniones /> <Movil />
+     <Servicios dark={dark} /> <Ventajas /> <Nosotros /> <Opiniones /> <Movil />
     </>
   );
 }

@@ -1,8 +1,9 @@
 import "../styles/globals.css";
-import Navbar from "../components/ui/Navbar";
+
 
 import { ParallaxProvider } from "react-scroll-parallax";
 import Footer from "../components/ui/Footer";
+import Navbar from "../components/ui/Navbar";
 function MyApp({ Component, pageProps }) {
   return (
     <>

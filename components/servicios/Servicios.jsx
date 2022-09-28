@@ -12,23 +12,24 @@ import Card from "./Card";
 import { Parallax } from "react-parallax";
 
 //Borroso fondo
-const Servicios = () => {
+const Servicios = ({dark}) => {
   return (
-    <Parallax
-      bgImage="/img/BG_S04.png"
+    <div className={`bg-${dark}`}>
+      <Parallax
+      bgImage="/img/backs/Waves.png"
       bgImageAlt="the cat"
       strength={700}
       bgImageStyle={{
         objectFit: "cover",
       }}
     >
-      <div className=" sm:h-full md:h-full lg:h-full xl:h-full pt-28 2xl:h-[130vh] ">
+      <div className="sm:h-full md:h-full lg:h-full xl:h-full pt-28 2xl:h-[130vh] ">
         <div className="grid grid-cols-1 justify-center text-center">
           {" "}
           <h1 className="sm:text-5xl text-2xl font-bold text-[#2adc2f]">
             Servicios
           </h1>
-          <h2 className="sm:text-xl text-lg sm:ml-20 sm:mr-20 ml-5 mr-5 pt-5 text-white">
+          <h2 className="sm:text-xl text-lg sm:ml-20 sm:mr-20 ml-5 mr-5 pt-5 dark:text-white text-black">
             La combinación de diferentes tecnologías y nuestra experiencia nos
             permite construir una solución personalizada a las necesidades de tu
             negocio o empresa.
@@ -139,6 +140,7 @@ const Servicios = () => {
         </div>
       </div>
     </Parallax>
+    </div>
   );
 };
 

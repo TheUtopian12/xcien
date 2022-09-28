@@ -59,6 +59,7 @@ const Navbar = () => {
           <li className="p-4">
             <Link href="/">Contacto</Link>
           </li>
+        
         </ul>
         <ul className="p-4 hidden sm:flex">
           <Link href="/">
