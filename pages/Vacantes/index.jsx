@@ -12,15 +12,15 @@ const index = () => {
         </h2>
       </div>
       <div className="flex bg-white w-[600px] h-[700px] -translate-x-20 translate-y-40 rounded-[20px] justify-center shadow-lg">
-        <form className=" rounded m-8  w-[80%] ">
+        <htmlForm className=" rounded m-8  w-[80%] ">
           <div className="text-center mt-10 mb-5">
             <h1 className="text-2xl text-black justify-center font-bold">Contacto</h1>
           </div>
 
           <div className="mb-4">
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-first-name"
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="grid-first-name"
             >
               Nombre Completo
             </label>
@@ -34,8 +34,8 @@ const index = () => {
 
           <div className="mb-4">
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-first-name"
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="grid-first-name"
             >
               E-Mail
             </label>
@@ -48,8 +48,8 @@ const index = () => {
           </div>
           <div className="mb-4">
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-first-name"
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="grid-first-name"
             >
               Teléfono
             </label>
@@ -64,8 +64,8 @@ const index = () => {
 
           <div className="mb-6">
           <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-first-name"
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="grid-first-name"
             >
               Selecciona tu Área de interés
             </label>
@@ -80,8 +80,8 @@ const index = () => {
           </div>
           <div className="mb-6">
           <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-first-name"
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="grid-first-name"
             >
               Selecciona tu Ubicacion
             </label>
@@ -97,8 +97,8 @@ const index = () => {
 
           <div className="mb-4">
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-first-name"
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="grid-first-name"
             >
               Mensaje
             </label>
@@ -122,7 +122,7 @@ const index = () => {
             </button>
           <button className="btn btn-success text-white">Enviar</button>
           </div>
-        </form>
+        </htmlForm>
       </div>
     </div>
   );
