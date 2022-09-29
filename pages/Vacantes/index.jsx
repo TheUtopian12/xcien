@@ -10,6 +10,7 @@ const props = {
   action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
   accept: ".pdf",
 
+
   onChange(info) {
     const { status } = info.file;
 
@@ -169,7 +170,7 @@ const Vacantes = () => {
             />
           </div>
 
-          <div className="w-full h-14 mb-4">
+          <div className="w-full h-14 mb-12">
             <Dragger {...props} style={{ border: "2" }}>
               <p className="text-green-500"> Adjuntar CV</p>
             </Dragger>
