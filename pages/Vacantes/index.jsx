@@ -179,6 +179,9 @@ const Vacantes = () => {
                   </>
                 ) : (
                   <>
+                   <option className="" value="">
+                  - -
+                </option>
                     <option value="Técnicos y auxiliares de instalación">
                       Técnicos y auxiliares de instalación
                     </option>
