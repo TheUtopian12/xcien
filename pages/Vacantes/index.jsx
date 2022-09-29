@@ -29,7 +29,7 @@ const props = {
   },
 };
 
-const index = () => {
+const Vacantes = () => {
   const [estado, setEstado] = useState("");
   const handleAddrTypeChange = (e) => {
     setEstado(e.target.value);
@@ -186,4 +186,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Vacantes;
