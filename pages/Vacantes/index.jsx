@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "antd/dist/antd.css";
 import { InboxOutlined } from "@ant-design/icons";
 import { message, Upload } from "antd";
@@ -9,7 +10,6 @@ const props = {
   multiple: false,
   action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
   accept: ".pdf",
-
 
   onChange(info) {
     const { status } = info.file;
@@ -36,6 +36,29 @@ const Vacantes = () => {
     setEstado(e.target.value);
   };
   console.log(estado);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_qv3y18o",
+        "template_ikvjmzn",
+        form.current,
+        "1c7A6aDNctH2b5iEo"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="h-[100vh]  bg-[#00723F] flex">
       <div className="flex flex-col bg01 bg-cover w-[51%] h-[90vh] justify-center items-center rounded-br-3xl">
@@ -47,139 +70,110 @@ const Vacantes = () => {
         </h2>
       </div>
       <div className="flex bg-white w-[600px] h-[800px] -translate-x-20 translate-y-40 rounded-[20px] justify-center shadow-lg">
-        <htmlForm className=" rounded m-8  w-[80%] ">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className=" rounded m-8  w-[80%] "
+        >
           <div className="text-center mt-10 mb-5">
             <h1 className="text-2xl text-black justify-center font-bold">
               Contacto
             </h1>
+            <div  className="mb-4">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Nombre Completo
+              </label>
+              <input
+                type="text"
+                name="name"
+                className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div  className="mb-4">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div  className="mb-4">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Teléfono
+              </label>
+              <input
+                type="phone"
+                name="telefono"
+                className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div  className="mb-4">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Selecciona tu Ubicacion
+              </label>
+              <select
+                className="block appearance-none w-full bg-white border border-green-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+                id="grid-state"
+                name="estado"
+                onChange={(e) => handleAddrTypeChange(e)}
+              >
+                <option className="" value="">
+                  - -
+                </option>
+
+                <option value="Monterrey">Monterrey</option>
+                <option value="Saltillo">Saltillo</option>
+                <option value="Guadalajara">Guadalajara</option>
+                <option value="Reynosa">Reynosa</option>
+                <option value="Queretaro">Queretaro</option>
+              </select>
+            </div>
+
+            <div  className="mb-4">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Selecciona tu Área de interés
+              </label>
+              <select
+                name="area"
+                id=""
+                className="block appearance-none w-full bg-white border border-green-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+              >
+                {estado === "Monterrey" ? (
+                  <>
+                    <option value="Técnicos y auxiliares de instalación">
+                      Técnicos y auxiliares de instalación
+                    </option>
+                    <option value="Asesor Comercial de Negocios">Asesor Comercial de Negocios</option>
+                    <option value="Atención a clientes">Atención a clientes</option>
+                    <option value="Especialista en Soporte Télefonico">Especialista en Soporte Télefonico</option>
+                    <option value="Especialista en Soporte telefónico Bilingue">
+                      Especialista en Soporte telefónico Bilingue
+                    </option>
+                    <option value="NOC">NOC</option>
+                    <option value="Administración">Administración</option>
+                    <option value="Almacén">Almacén</option>
+                    <option value="Prácticas profesionales">Prácticas profesionales</option>
+                    <option value="TI">TI</option>
+                  </>
+                ) : (
+                  <>
+                    <option value="Técnicos y auxiliares de instalación">
+                      Técnicos y auxiliares de instalación
+                    </option>
+                  </>
+                )}
+              </select>
+            </div>
+            <div className="mn-4"> <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Mensaje</label>
+          <textarea name="message" className="mb-4 block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
+             /></div>
           </div>
 
-          <div className="mb-4">
-            <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-first-name"
-            >
-              Nombre Completo
-            </label>
-            <input
-              className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
-              id="username"
-              type="text"
-              placeholder=""
-            />
-          </div>
-
-          <div className="mb-4">
-            <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-first-name"
-            >
-              E-Mail
-            </label>
-            <input
-              className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
-              id="username"
-              type="text"
-              placeholder=""
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-first-name"
-            >
-              Teléfono
-            </label>
-            <input
-              className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
-              id="username"
-              type="phone"
-              placeholder=""
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-first-name"
-            >
-              Selecciona tu Ubicacion
-            </label>
-            <select
-              className="block appearance-none w-full bg-white border border-green-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-green-500"
-              id="grid-state"
-              onChange={(e) => handleAddrTypeChange(e)}
-            >
-              <option className="" value={""}>
-                - -
-              </option>
-              <option value="monterrey">Monterrey</option>
-              <option value="saltillo">Saltillo</option>
-              <option value="guadalajara">Guadalajara</option>
-              <option value="reynosa">Reynosa</option>
-              <option value="queretaro">Queretaro</option>
-            </select>
-          </div>
-
-          <div className="mb-6">
-            <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-first-name"
-            >
-              Selecciona tu Área de interés
-            </label>
-            <select
-              className="block appearance-none w-full bg-white border border-green-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-green-500"
-              id="grid-state"
-            >
-              <option className="">- -</option>
-
-              {estado === "monterrey" ? (
-                <>
-                  <option value="">Técnicos y auxiliares de instalación</option>
-                  <option value="">Asesor Comercial de Negocios</option>
-                  <option value="">Atención a clientes</option>
-                  <option value="">Especialista en Soporte Télefonico</option>
-                  <option value="">
-                    Especialista en Soporte telefónico Bilingue
-                  </option>
-                  <option value="">NOC</option>
-                  <option value="">Administración</option>
-                  <option value="">Almacén</option>
-                  <option value="">Prácticas profesionales</option>
-                  <option value="">TI</option>
-                </>
-              ) : (
-                <>
-                  <option value="">Técnicos y auxiliares de instalación</option>
-                </>
-              )}
-            </select>
-          </div>
-
-          <div className="mb-4">
-            <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="grid-first-name"
-            >
-              Mensaje
-            </label>
-            <input
-              className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
-              id="username"
-              type="text"
-            />
-          </div>
-
-          <div className="w-full h-14 mb-12">
-            <Dragger {...props} style={{ border: "2" }}>
-              <p className="text-green-500"> Adjuntar CV</p>
-            </Dragger>
-          </div>
-
-          <div className="flex items-center justify-end">
-            <button className="btn btn-success text-white">Enviar</button>
-          </div>
-        </htmlForm>
+         
+          <input type="submit" value="Enviar" className="btn btn-success text-white"/>
+        </form>
       </div>
     </div>
   );
