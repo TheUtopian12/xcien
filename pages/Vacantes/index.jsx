@@ -199,7 +199,7 @@ const Vacantes = () => {
               <textarea
                 style={{resize:'none', height:'50px'}}
                 name="message"
-                maxlength="250"
+                maxLength="250"
                 className="mb-4 block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
