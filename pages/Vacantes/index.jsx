@@ -53,11 +53,14 @@ const Vacantes = () => {
         (result) => {
           console.log(result.text);
           alert('Se envio exitosamente ')
+          e.target.reset()
         },
         (error) => {
           console.log(error.text);
         }
       );
+
+      
   };
 
   return (
