@@ -147,6 +147,7 @@ const Vacantes = () => {
                 name="area"
                 id=""
                 className="block appearance-none w-full bg-white border border-green-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-green-500"
+                required
              
              >
                 {estado === "Monterrey" ? (
