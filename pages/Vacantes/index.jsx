@@ -175,7 +175,7 @@ const Vacantes = () => {
             </Dragger>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-end">
             <button className="btn btn-success text-white">Enviar</button>
           </div>
         </htmlForm>
