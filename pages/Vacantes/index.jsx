@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "antd/dist/antd.css";
 import { InboxOutlined } from "@ant-design/icons";
-import { message, Upload } from "antd";
+import { Alert, message, Upload } from "antd";
 const { Dragger } = Upload;
 
 const props = {
@@ -52,6 +52,7 @@ const Vacantes = () => {
       .then(
         (result) => {
           console.log(result.text);
+          alert('Se envio exitosamente ')
         },
         (error) => {
           console.log(error.text);
@@ -79,7 +80,7 @@ const Vacantes = () => {
             <h1 className="text-2xl text-black justify-center font-bold">
               Contacto
             </h1>
-            <div  className="mb-4">
+            <div className="mb-4">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Nombre Completo
               </label>
@@ -87,9 +88,10 @@ const Vacantes = () => {
                 type="text"
                 name="name"
                 className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
-              />
+                required
+             />
             </div>
-            <div  className="mb-4">
+            <div className="mb-4">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Email
               </label>
@@ -97,9 +99,10 @@ const Vacantes = () => {
                 type="email"
                 name="email"
                 className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
+                required
               />
             </div>
-            <div  className="mb-4">
+            <div className="mb-4">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Teléfono
               </label>
@@ -107,9 +110,10 @@ const Vacantes = () => {
                 type="phone"
                 name="telefono"
                 className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
-              />
+                required
+            />
             </div>
-            <div  className="mb-4">
+            <div className="mb-4">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Selecciona tu Ubicacion
               </label>
@@ -118,7 +122,8 @@ const Vacantes = () => {
                 id="grid-state"
                 name="estado"
                 onChange={(e) => handleAddrTypeChange(e)}
-              >
+                required
+            >
                 <option className="" value="">
                   - -
                 </option>
@@ -131,7 +136,7 @@ const Vacantes = () => {
               </select>
             </div>
 
-            <div  className="mb-4">
+            <div className="mb-4">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Selecciona tu Área de interés
               </label>
@@ -139,22 +144,31 @@ const Vacantes = () => {
                 name="area"
                 id=""
                 className="block appearance-none w-full bg-white border border-green-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-green-500"
-              >
+             
+             >
                 {estado === "Monterrey" ? (
                   <>
                     <option value="Técnicos y auxiliares de instalación">
                       Técnicos y auxiliares de instalación
                     </option>
-                    <option value="Asesor Comercial de Negocios">Asesor Comercial de Negocios</option>
-                    <option value="Atención a clientes">Atención a clientes</option>
-                    <option value="Especialista en Soporte Télefonico">Especialista en Soporte Télefonico</option>
+                    <option value="Asesor Comercial de Negocios">
+                      Asesor Comercial de Negocios
+                    </option>
+                    <option value="Atención a clientes">
+                      Atención a clientes
+                    </option>
+                    <option value="Especialista en Soporte Télefonico">
+                      Especialista en Soporte Télefonico
+                    </option>
                     <option value="Especialista en Soporte telefónico Bilingue">
                       Especialista en Soporte telefónico Bilingue
                     </option>
                     <option value="NOC">NOC</option>
                     <option value="Administración">Administración</option>
                     <option value="Almacén">Almacén</option>
-                    <option value="Prácticas profesionales">Prácticas profesionales</option>
+                    <option value="Prácticas profesionales">
+                      Prácticas profesionales
+                    </option>
                     <option value="TI">TI</option>
                   </>
                 ) : (
@@ -166,21 +180,28 @@ const Vacantes = () => {
                 )}
               </select>
             </div>
-            <div className="mn-4"> <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Mensaje</label>
-          <textarea name="message" className="mb-4 block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
-             /></div>
-<div className="w-full h-14 mb-12">
-            <Dragger {...props} style={{ border: "2" }}>
-              <p className="text-green-500"> Adjuntar CV</p>
-            </Dragger>
+            <div className="mn-4">
+              {" "}
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                Mensaje
+              </label>
+              <textarea
+                name="message"
+                className="mb-4 block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div className="w-full h-14 mb-12">
+              <Dragger {...props} style={{ border: "2" }}>
+                <p className="text-green-500"> Adjuntar CV</p>
+              </Dragger>
+            </div>
           </div>
 
-
-
-          </div>
-
-         
-          <input type="submit" value="Enviar" className="btn btn-success text-white"/>
+          <input
+            type="submit"
+            value="Enviar"
+            className="btn btn-success text-white"
+          />
         </form>
       </div>
     </div>
