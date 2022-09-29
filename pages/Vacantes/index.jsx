@@ -83,8 +83,8 @@ const Vacantes = () => {
             <h1 className="text-2xl text-black justify-center font-bold">
               Contacto
             </h1>
-            <div className="mb-4">
-              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+            <div className="mb-4 text-left">
+              <label className="block  uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Nombre Completo
               </label>
               <input
@@ -94,7 +94,7 @@ const Vacantes = () => {
                 required
              />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 text-left">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Email
               </label>
@@ -105,7 +105,7 @@ const Vacantes = () => {
                 required
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 text-left">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Teléfono
               </label>
@@ -116,7 +116,7 @@ const Vacantes = () => {
                 required
             />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 text-left">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Selecciona tu Ubicacion
               </label>
@@ -139,7 +139,7 @@ const Vacantes = () => {
               </select>
             </div>
 
-            <div className="mb-4">
+            <div className="mb-4 text-left">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Selecciona tu Área de interés
               </label>
@@ -190,13 +190,15 @@ const Vacantes = () => {
                 )}
               </select>
             </div>
-            <div className="mn-4">
+            <div className="mn-4 text-left">
               {" "}
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Mensaje
               </label>
+              <span className="text-green-500 text-[10px]">Máximo 250 caracteres</span>
               <textarea
                 name="message"
+                maxlength="250"
                 className="mb-4 block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
