@@ -169,6 +169,14 @@ const Vacantes = () => {
             <div className="mn-4"> <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Mensaje</label>
           <textarea name="message" className="mb-4 block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
              /></div>
+<div className="w-full h-14 mb-12">
+            <Dragger {...props} style={{ border: "2" }}>
+              <p className="text-green-500"> Adjuntar CV</p>
+            </Dragger>
+          </div>
+
+
+
           </div>
 
          
