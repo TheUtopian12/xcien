@@ -45,19 +45,19 @@ const Navbar = () => {
           className="hidden sm:flex font-semibold pl-[5%] "
         >
           <li className="p-4">
-            <Link href="/#inicio">Inicio</Link>
+            <Link href="/#inicio"><h1 className="text-white" style={{cursor:'pointer'}}>Inicio</h1></Link>
           </li>
           <li className="p-4">
-            <Link href="/#servicios">Servicios</Link>
+            <Link href="/#servicios"><h1 className="text-white" style={{cursor:'pointer'}}>Servicios</h1></Link>
           </li>
           <li className="p-4">
-            <Link href="/">Nosotros</Link>
+            <Link href="/"><h1 className="text-white" style={{cursor:'pointer'}}>Nosotros</h1></Link>
           </li>
           <li className="p-4">
-            <Link href="/">Cobertura</Link>
+            <Link href="/"><h1 className="text-white" style={{cursor:'pointer'}}>Cobertura</h1></Link>
           </li>
           <li className="p-4">
-            <Link href="/">Contacto</Link>
+            <Link href="/"><h1 className="text-white" style={{cursor:'pointer'}}>Contacto</h1></Link>
           </li>
         
         </ul>

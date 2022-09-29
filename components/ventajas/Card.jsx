@@ -10,7 +10,7 @@ const Card = (props) => {
       onMouseEnter={() => props.onCardClick(id)}
     >
       <div style={{ backdropFilter: "blur(2px)", height: "600px" }}>
-        <h3>{title}</h3>
+        <h3 className="text-white">{title}</h3>
         <p>{description}</p>
       </div>
     </div>

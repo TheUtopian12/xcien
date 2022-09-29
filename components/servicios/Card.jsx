@@ -23,7 +23,7 @@ useEffect(() => {
         </div>
 
         <div>
-          <h1 className="pt-5 pl-5  font-semibold sm:text-2xl text-xl uppercase ">
+          <h1 className="pt-5 pl-5  font-semibold sm:text-2xl text-xl uppercase text-white group-hover:text-[#050c13]">
             {titulo}
           </h1>
           <p className="pt-5 pl-5 text-md h-[100px]">{descripcion}</p>

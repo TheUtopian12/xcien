@@ -9,7 +9,7 @@ const CardVertical = (props) => {
       style={{ backgroundImage: `url(${url})` }}
       
     >
-      <h3>{title}</h3>
+      <h3 className="text-white">{title}</h3>
       <p>{description}</p>
     </div></div>
    

@@ -42,6 +42,7 @@ const Footer = () => {
               <br />
               Sábados de 9:00 a 13:00 hrs.
             </p>
+            <Link href={'/Vacantes'}><p className="text-[#04ce04]" style={{cursor:'pointer'}}>Vacantes</p></Link>
           </div>
 
           <div className="text-white w-[250px] 2xl:translate-x-[80px] text-sm ">
