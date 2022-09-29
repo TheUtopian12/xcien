@@ -166,8 +166,6 @@ const Vacantes = () => {
               className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
               id="username"
               type="text"
-              placeholder=""
-              maxlength="255"
             />
           </div>
 
