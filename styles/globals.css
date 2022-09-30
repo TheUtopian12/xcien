@@ -4,9 +4,9 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700&family=Montserrat:wght@100;400&display=swap');
-*{
-  
-}
+
+* {}
+
 html {
   background-color: rgb(255, 255, 255);
   font-family: 'Inter', sans-serif;
@@ -16,28 +16,38 @@ html {
 
 .bgImage {
   background-image: url('/img/BG_S04.png');
-  
- 
-} 
+
+
+}
+
 .bgImageF {
   background-image: url('/img/BG_Flat.png');
-  
- 
-} 
 
-.bgFooter{
+
+}
+
+.bgFooter {
   background-image: url('/img/backs/BG_08.png');
 }
 
-.bgInternet{
+.bgInternet {
   background-image: url('/img/antenas-telefonia-telecomunicaciones (1).jpg');
 }
-.bgWave{
+
+.bgWave {
   background-image: url('/img/backs/svg.png');
 }
-.bg01{
+
+.bg01 {
   background-image: url('/img/Back01.png');
 }
+
+
+input[type="file"] {
+  display: none;
+}
+
+label {}
 
 
 
@@ -48,6 +58,7 @@ html {
   width: 80px;
   height: 80px;
 }
+
 .lds-facebook div {
   display: inline-block;
   position: absolute;
@@ -56,24 +67,30 @@ html {
   background: #3ba137;
   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
+
 .lds-facebook div:nth-child(1) {
   left: 8px;
   animation-delay: -0.24s;
 }
+
 .lds-facebook div:nth-child(2) {
   left: 32px;
   animation-delay: -0.12s;
 }
+
 .lds-facebook div:nth-child(3) {
   left: 56px;
   animation-delay: 0;
 }
+
 @keyframes lds-facebook {
   0% {
     top: 8px;
     height: 64px;
   }
-  50%, 100% {
+
+  50%,
+  100% {
     top: 24px;
     height: 32px;
   }
@@ -220,7 +237,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height:50vh;
+    height: 50vh;
     border-radius: 0rem;
     color: white;
     cursor: pointer;
@@ -298,7 +315,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height:50vh;
+    height: 50vh;
     border-radius: 0rem;
     color: white;
     cursor: pointer;
@@ -382,7 +399,8 @@ html {
   color: white;
   height: 70px;
   margin: 0rem;
-  transition: height 1.5s;filter: brightness(50%);
+  transition: height 1.5s;
+  filter: brightness(50%);
 }
 
 .cardV h3 {
@@ -408,7 +426,8 @@ html {
 
 .cardV.active {
   height: 300px;
-  filter: brightness(100%);filter: saturate(2);
+  filter: brightness(100%);
+  filter: saturate(2);
 }
 
 .cardV.active h3 {

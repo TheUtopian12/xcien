@@ -1,40 +1,15 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import "antd/dist/antd.css";
-import { InboxOutlined } from "@ant-design/icons";
-import { Alert, message, Upload } from "antd";
+import { Button, message, Upload } from 'antd';
 import Aviso from "../../components/ui/Aviso";
-const { Dragger } = Upload;
+import { BiFileBlank } from "react-icons/bi";
 
-const props = {
-  name: "file",
-  multiple: false,
-  action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
-  accept: ".pdf",
 
-  onChange(info) {
-    const { status } = info.file;
 
-    if (status !== "uploading") {
-      console.log(info.file, info.fileList);
-    }
-
-    if (status === "done") {
-      message.success(`${info.file.name} file uploaded successfully.`);
-    } else if (status === "error") {
-      message.error(`${info.file.name} file upload failed.`);
-    }
-  },
-
-  onDrop(e) {
-    console.log("Dropped files", e.dataTransfer.files);
-  },
-};
 
 const Vacantes = () => {
   const [estado, setEstado] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
-
 
   const handleAddrTypeChange = (e) => {
     setEstado(e.target.value);
@@ -49,22 +24,20 @@ const Vacantes = () => {
     emailjs
       .sendForm(
         "service_qv3y18o",
-        "template_ikvjmzn",
+        "template_vd003j5",
         form.current,
         "1c7A6aDNctH2b5iEo"
       )
       .then(
         (result) => {
           console.log(result.text);
-          e.target.reset()
-          setIsModalOpen(true)
+          e.target.reset();
+          setIsModalOpen(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
-
-      
   };
 
   return (
@@ -80,6 +53,8 @@ const Vacantes = () => {
       </div>
       <div className="flex bg-white w-[600px] h-[800px] -translate-x-20 translate-y-40 rounded-[20px] justify-center shadow-lg">
         <form
+          enctype="multipart/form-data"
+          method="post"
           ref={form}
           onSubmit={sendEmail}
           className=" rounded m-8  w-[80%] "
@@ -97,7 +72,7 @@ const Vacantes = () => {
                 name="name"
                 className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
                 required
-             />
+              />
             </div>
             <div className="mb-4 text-left">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
@@ -119,7 +94,7 @@ const Vacantes = () => {
                 name="telefono"
                 className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
                 required
-            />
+              />
             </div>
             <div className="mb-4 text-left">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
@@ -131,7 +106,7 @@ const Vacantes = () => {
                 name="estado"
                 onChange={(e) => handleAddrTypeChange(e)}
                 required
-            >
+              >
                 <option className="" value="">
                   - -
                 </option>
@@ -153,13 +128,12 @@ const Vacantes = () => {
                 id=""
                 className="block appearance-none w-full bg-white border border-green-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-green-500"
                 required
-             
-             >
+              >
                 {estado === "Monterrey" ? (
                   <>
-                   <option className="" value="">
-                  - -
-                </option>
+                    <option className="" value="">
+                      - -
+                    </option>
                     <option value="Técnicos y auxiliares de instalación">
                       Técnicos y auxiliares de instalación
                     </option>
@@ -185,9 +159,9 @@ const Vacantes = () => {
                   </>
                 ) : (
                   <>
-                   <option className="" value="">
-                  - -
-                </option>
+                    <option className="" value="">
+                      - -
+                    </option>
                     <option value="Técnicos y auxiliares de instalación">
                       Técnicos y auxiliares de instalación
                     </option>
@@ -200,17 +174,40 @@ const Vacantes = () => {
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Mensaje
               </label>
-              <span className="text-green-500 text-[10px]">Máximo 250 caracteres</span>
+              <span className="text-green-500 text-[10px]">
+                Máximo 250 caracteres
+              </span>
               <textarea
-                style={{resize:'none', height:'50px'}}
+                style={{ resize: "none", height: "50px" }}
                 name="message"
                 maxLength="250"
                 className="mb-4 block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
-            <div className="w-full h-14 mb-12">
-            <label>Attach file:</label>
-    <input type="file" name="my_file"/> 
+            <div className="w-full h-14 mb-12 ">
+             
+             
+              <label
+                htmlFor="archivo"
+                style={{
+                  display: "block",
+                  backgroundColor: "#ffff",
+                  height: "50px",
+                  backgroundColor: "#36d298",
+                  borderRadius: "15px",
+                  borderStyle: "dashed",
+                  borderColor: "black",
+                  color: "white",
+                  fontSize: "20px",
+                  display:'flex',
+                  justifyContent:'center',
+                  placeItems:'center',
+                  gap:'10px'
+                }}
+              >
+              <BiFileBlank size={30}/>  Adjunta tu CV
+              </label>
+              <input type="file" name="my_file" id="archivo" onChange={(e)=>alert('Archivo cargado con exito')}/>
             </div>
           </div>
 
