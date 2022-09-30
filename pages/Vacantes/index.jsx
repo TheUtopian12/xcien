@@ -47,7 +47,7 @@ const Vacantes = () => {
   };
 
   return (
-    <div className="h-[100vh]  bg-[#00723F] flex">
+    <div className="h-[110vh]  bg-[#00723F] flex">
       <Aviso isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <div className="flex flex-col bg01 bg-cover w-[51%] h-[90vh] justify-center items-center rounded-br-3xl">
         <h1 className="text-4xl text-white m-5 font-bold w-[60%]">
