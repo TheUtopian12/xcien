@@ -4,10 +4,16 @@ import { Button, message, Upload } from 'antd';
 import Aviso from "../../components/ui/Aviso";
 import { BiFileBlank } from "react-icons/bi";
 
+import { ToastContainer, toast } from 'react-toastify';
 
-
+import 'react-toastify/dist/ReactToastify.css';
 
 const Vacantes = () => {
+  const notify = () => {toast.success("Archivo cargado con exito!", {
+    position: toast.POSITION.TOP_CENTER
+  });
+
+}
   const [estado, setEstado] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -207,7 +213,7 @@ const Vacantes = () => {
               >
               <BiFileBlank size={30}/>  Adjunta tu CV
               </label>
-              <input type="file" name="my_file" id="archivo" onChange={(e)=>alert('Archivo cargado con exito')}/>
+              <input type="file" name="my_file" id="archivo" onChange={notify}/>
             </div>
           </div>
 
@@ -216,6 +222,7 @@ const Vacantes = () => {
             value="Enviar"
             className="btn btn-success text-white"
           />
+           <ToastContainer />
         </form>
       </div>
     </div>
