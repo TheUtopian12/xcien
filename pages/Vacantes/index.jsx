@@ -53,7 +53,7 @@ const Vacantes = () => {
       </div>
       <div className="flex bg-white w-[600px] h-[800px] -translate-x-20 translate-y-40 rounded-[20px] justify-center shadow-lg">
         <form
-          enctype="multipart/form-data"
+          encType="multipart/form-data"
           method="post"
           ref={form}
           onSubmit={sendEmail}
