@@ -209,9 +209,8 @@ const Vacantes = () => {
               />
             </div>
             <div className="w-full h-14 mb-12">
-              <Dragger {...props} style={{ border: "2" }}>
-                <p className="text-green-500"> Adjuntar CV</p>
-              </Dragger>
+            <label>Attach file:</label>
+    <input type="file" name="my_file"/> 
             </div>
           </div>
 
