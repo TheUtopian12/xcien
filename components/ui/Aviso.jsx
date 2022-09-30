@@ -21,9 +21,10 @@ const Aviso = ({isModalOpen, setIsModalOpen, titulo, description}) => {
       
       footer={[
         
-        <Button key="submit" type="primary"  onClick={handleOk}>
-          Ok
-        </Button>
+        
+
+        <button className='btn btn-success text-white' key="submit" type="primary"  onClick={handleOk}>Ok</button>
+
        
       ]}
       >

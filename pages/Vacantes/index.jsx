@@ -33,7 +33,7 @@ const props = {
 
 const Vacantes = () => {
   const [estado, setEstado] = useState("");
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
 
 
   const handleAddrTypeChange = (e) => {
