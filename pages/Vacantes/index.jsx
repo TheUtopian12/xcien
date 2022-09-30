@@ -1,55 +1,74 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Button, message, Upload } from 'antd';
+import { Button, message, Upload } from "antd";
 import Aviso from "../../components/ui/Aviso";
 import { BiFileBlank } from "react-icons/bi";
+import ReCAPTCHA from "react-google-recaptcha";
+import { ToastContainer, toast } from "react-toastify";
 
-import { ToastContainer, toast } from 'react-toastify';
-
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const Vacantes = () => {
-  const notify = () => {toast.success("Archivo cargado con exito!", {
-    position: toast.POSITION.TOP_CENTER
-  });
-
-}
   const [estado, setEstado] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [robot, setRobot] = useState(false);
+
+  function onChange(value) {
+    if (value) {
+      console.log("el usuario no es un robot");
+      setRobot(true);
+    }
+  }
+
+  const notify = () => {
+    toast.success("Archivo cargado con exito!", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
+  const error = () => {
+    toast.error("Debes responder el captcha!", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
 
   const handleAddrTypeChange = (e) => {
     setEstado(e.target.value);
   };
-  console.log(estado);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_qv3y18o",
-        "template_vd003j5",
-        form.current,
-        "1c7A6aDNctH2b5iEo"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-          setIsModalOpen(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (robot === true) {
+      emailjs
+        .sendForm(
+          "service_qv3y18o",
+          "template_vd003j5",
+          form.current,
+          "1c7A6aDNctH2b5iEo"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            e.target.reset();
+            setIsModalOpen(true);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    } else {
+      error();
+    }
   };
 
   return (
     <div className="h-[110vh]  bg-[#00723F] flex">
+      <ToastContainer />
       <Aviso isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
-      <div className="flex flex-col bg01 bg-cover w-[51%] h-[90vh] justify-center items-center rounded-br-3xl">
+      <div className="flex flex-col bg01 bg-cover w-[51%] h-[100vh] justify-center items-center rounded-br-3xl">
         <h1 className="text-4xl text-white m-5 font-bold w-[60%]">
           Estamos en búsqueda de los mejores talentos
         </h1>
@@ -57,7 +76,7 @@ const Vacantes = () => {
           ¿Te interesa unirte a nuestro equipo de trabajo?
         </h2>
       </div>
-      <div className="flex bg-white w-[600px] h-[800px] -translate-x-20 translate-y-40 rounded-[20px] justify-center shadow-lg">
+      <div className="flex bg-white w-[600px] h-[900px] -translate-x-20 translate-y-36 rounded-[20px] justify-center shadow-lg">
         <form
           encType="multipart/form-data"
           method="post"
@@ -191,8 +210,6 @@ const Vacantes = () => {
               />
             </div>
             <div className="w-full h-14 mb-12 ">
-             
-             
               <label
                 htmlFor="archivo"
                 style={{
@@ -205,24 +222,31 @@ const Vacantes = () => {
                   borderColor: "black",
                   color: "white",
                   fontSize: "20px",
-                  display:'flex',
-                  justifyContent:'center',
-                  placeItems:'center',
-                  gap:'10px'
+                  display: "flex",
+                  justifyContent: "center",
+                  placeItems: "center",
+                  gap: "10px",
                 }}
               >
-              <BiFileBlank size={30}/>  Adjunta tu CV
+                <BiFileBlank size={30} /> Adjunta tu CV
               </label>
-              <input type="file" name="my_file" id="archivo" onChange={notify}/>
+              <input
+                type="file"
+                name="my_file"
+                id="archivo"
+                onChange={notify}
+              />
             </div>
           </div>
-
+          <ReCAPTCHA
+            sitekey="6LfB8kMiAAAAAIubAXv5Ci3_fd36wrr7uVVJSRTQ"
+            onChange={onChange}
+          />
           <input
             type="submit"
             value="Enviar"
             className="btn btn-success text-white"
           />
-           <ToastContainer />
         </form>
       </div>
     </div>
