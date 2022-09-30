@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import "antd/dist/antd.css";
 import { InboxOutlined } from "@ant-design/icons";
 import { Alert, message, Upload } from "antd";
+import Aviso from "../../components/ui/Aviso";
 const { Dragger } = Upload;
 
 const props = {
@@ -32,6 +33,9 @@ const props = {
 
 const Vacantes = () => {
   const [estado, setEstado] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+
   const handleAddrTypeChange = (e) => {
     setEstado(e.target.value);
   };
@@ -52,8 +56,8 @@ const Vacantes = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert('Se envio exitosamente ')
           e.target.reset()
+          setIsModalOpen(true)
         },
         (error) => {
           console.log(error.text);
@@ -65,6 +69,7 @@ const Vacantes = () => {
 
   return (
     <div className="h-[100vh]  bg-[#00723F] flex">
+      <Aviso isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <div className="flex flex-col bg01 bg-cover w-[51%] h-[90vh] justify-center items-center rounded-br-3xl">
         <h1 className="text-4xl text-white m-5 font-bold w-[60%]">
           Estamos en búsqueda de los mejores talentos
