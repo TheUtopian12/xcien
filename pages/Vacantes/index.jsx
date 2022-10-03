@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Vacantes = () => {
   const [estado, setEstado] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const [nombreArchivo, setNombreArchivo] = useState('')
   const [robot, setRobot] = useState(false);
 
   function onChange(value) {
@@ -21,9 +21,11 @@ const Vacantes = () => {
     }
   }
 
-  const notify = () => {
-    toast.success("Archivo cargado con exito!", {
+  const notify = (e) => {
+    setNombreArchivo(e.target.files[0].name) 
+    toast.success(`Archivo cargado! ${e.target.files[0].name}`, {
       position: toast.POSITION.TOP_CENTER,
+
     });
   };
   const error = () => {
@@ -117,6 +119,7 @@ const Vacantes = () => {
               <input
                 type="phone"
                 name="telefono"
+                maxLength="10"
                 className="block appearance-none  rounded w-full py-2 px-3 bg-white border border-green-200 text-gray-700 text-xlleading-tight focus:outline-none focus:shadow-outline"
                 required
               />
@@ -234,8 +237,9 @@ const Vacantes = () => {
                 type="file"
                 name="my_file"
                 id="archivo"
-                onChange={notify}
+                onChange={(e) => notify(e)}
               />
+              <p>Archivo: <span className="text-red-600">{nombreArchivo}</span></p>
             </div>
           </div>
           <ReCAPTCHA

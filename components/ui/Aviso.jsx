@@ -28,7 +28,7 @@ const Aviso = ({isModalOpen, setIsModalOpen, titulo, description}) => {
        
       ]}
       >
-        <p>¡Gracias por enviar tu información! Hemos recibido tu curriculum correctamente. Nuestro equipo se encargará de valorarlo, en caso de que tu perfil se adapte a nuestras necesidades, nos pondremos en contacto contigo lo antes posible. ¡Mucho éxito!</p>
+        <p>¡Gracias! Hemos recibido tu información correctamente. En caso de que tu perfil se adapte a alguna de nuestras vacantes, nos pondremos en contacto contigo lo antes posible. ¡Mucho éxito!</p>
       </Modal>
     </>
   )
